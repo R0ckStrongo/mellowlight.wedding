@@ -32,7 +32,6 @@ cookieSettings.onclick = function(){
     document.cookie = "cookieConsent= unsure; max-age=" + 60 * 60 * 24 * 30;
     executeCodes();
 };
-
 document.querySelector(".banner__close").addEventListener("click", function () {
   this.closest(".banner").style.display = "none";
 });
