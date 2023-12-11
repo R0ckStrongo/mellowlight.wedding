@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+	<url>
+		<loc>https://mellowlight.de</loc>
+	</url>
+	<url>
+		<loc>https://mellowlight.de/gallery</loc>
+	</url>
+	<url>
+		<loc>https://mellowlight.de/about</loc>
+	</url>
+	<url>
+		<loc>https://mellowlight.de/services</loc>
+	</url>
+	<url>
+		<loc>https://mellowlight.de/impressum</loc>
+	</url>
+		<url>
+		<loc>https://mellowlight.de/datenschutz</loc>
+	</url>
+
+</urlset>
