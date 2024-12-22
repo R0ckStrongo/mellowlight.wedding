@@ -495,7 +495,8 @@
 							<div class="6u 12u$(medium)">
 								<p/>
 								<p class="hidden">Eure Geschichte verdient einzigartige Erinnerungen, oder? Wenn ihr Bock auf Fotos habt, die genauso einzigartig sind wie ihr, dann lasst uns reden. Schreibt uns einfach, und wir machen den Rest. Kein Drama, keine komplizierten Sachen – nur entspannte Gespräche über eure Vorstellungen und wie wir sie festhalten können. Also, worauf wartet ihr? Let's make it happen!</p>
-								<form method="POST" action="https://formspree.io/f/mpzgorky">
+								<form method="POST" action="https://api.web3forms.com/submit">
+									<input type="hidden" name="access_key" value="fd8230da-224c-45bd-baa3-0a4e347c5cef">
 									<div class="row uniform">
 										<div class="6u 12u$(xsmall) hidden">
 											<input type="text" name="Vornamen" id="name" value="" placeholder="Eure Vornamen" autocomplete="given-name" required/>
@@ -511,6 +512,8 @@
 											<textarea name="Nachricht" id="message" placeholder="Erzählt uns etwas über Euch und eure Pläne" rows="6" required></textarea>
 										</div>
 										<!-- Break -->
+										<input type="hidden" name="redirect" value="https://mellowlight.de/thankyou">
+										<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 										<div class="12u$">
 											<ul class="actions hidden">
 												<li><input type="submit" class="button special" value="Senden" /></li>
