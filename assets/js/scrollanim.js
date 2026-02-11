@@ -11,7 +11,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 $(window).scroll(function() {
   var scroll = $(window).scrollTop();
-	$(".zoom-me #slideshow").css({
+	$(".zoom-me .slideshow").css({
 		width: (100 + scroll/5)  + "%",
 		top: -(scroll/10)  + "%",
 		left: -(scroll/10)  + "%",

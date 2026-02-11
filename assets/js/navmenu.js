@@ -16,3 +16,12 @@ nav.addEventListener('click', function() {
 setTimeout(function(){
 	nav.classList.toggle('open');	
 }, 0);
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 0) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
