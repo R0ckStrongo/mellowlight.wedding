@@ -1,6 +1,6 @@
 /* Loading animation */
 document.onreadystatechange = function () {
-	 if (document.readyState !== "interactive" || document.readyState !== "complete") {
+	 if (document.readyState !== "complete") {
 		document.querySelector("body").style.visibility = "hidden";
 		document.getElementById("loading_screen").style.visibility = "visible";
 	 } else {
