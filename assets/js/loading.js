@@ -8,6 +8,6 @@ document.onreadystatechange = function () {
 		setTimeout(() => {
 		   document.getElementById("loading_screen").style.display ="none";
 		   document.querySelector("body").style.visibility = "visible";
-		}, 500)
+		}, 200);
 	 }
   };
