@@ -1,13 +1,18 @@
-/* Loading animation */
-document.onreadystatechange = function () {
-	 if (document.readyState !== "complete") {
-		document.querySelector("body").style.visibility = "hidden";
-		document.getElementById("loading_screen").style.visibility = "visible";
-	 } else {
-		document.getElementById("loading_screen").classList.add("fadeout");
-		setTimeout(() => {
-		   document.getElementById("loading_screen").style.display ="none";
-		   document.querySelector("body").style.visibility = "visible";
-		}, 200);
-	 }
-  };
+document.addEventListener("DOMContentLoaded", function () {
+  const heroImg = document.querySelector("#hero-image");
+  const loader = document.getElementById("loading_screen");
+
+  function hideLoader() {
+    loader.classList.add("fadeout");
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 500);
+  }
+
+  // Falls Bild schon aus Cache geladen ist
+  if (heroImg.complete && heroImg.naturalWidth !== 0) {
+    hideLoader();
+  } else {
+    heroImg.addEventListener("load", hideLoader);
+  }
+});

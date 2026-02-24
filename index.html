@@ -18,11 +18,11 @@
 		<!--meta property="og:image:width" content="1200"-->
 		<!--meta property="og:image:height" content="630"-->
 		<link rel="stylesheet" href="assets/css/main.min.css" />
-		<script src="assets/js/loading.js"></script>
+		<script src="assets/js/loading.js" defer></script>
 		<!--Goatcounter-->
 		<script data-goatcounter="https://mellowlight.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 	</head>
-	<body class="load" id="home">
+	<body id="home">
 		<!-- Loading indicator -->
 		<div id="loading_screen">
 			<div id="loading_indicator"></div>
@@ -89,9 +89,11 @@
 							images/weddings/braut-schleier-diadem.webp 2500w" 
 							sizes="100vw"/>
 					<img
+						id="hero-image"
 						src="images/weddings/braut-schleier-diadem.webp"
 						alt="Close-up einer Braut im Schleier"
-						fetchpriority="high" />
+						fetchpriority="high"
+						loading="eager"/>
 				</picture>
 				<picture>
 					<source media="(max-width: 736px)" 
@@ -107,7 +109,8 @@
 							sizes="100vw"/>
 					<img
 						src="images/weddings/thumbnails/braut-kuesst-braeutigam-auf-wange.webp"
-						alt="Braut küsst Bräutigam mit Sonnenbrille auf die Wange" />
+						alt="Braut küsst Bräutigam mit Sonnenbrille auf die Wange"
+						loading="lazy" />
 				</picture>
 				<picture>
 					<source media="(max-width: 736px)" 
@@ -681,7 +684,7 @@
 			<a href="https://portraits.mellowlight.de/">portraits.mellowlight.de</a>
 			<br /><br />
 			<img src="images/lgbtq-plus-pride-flag.webp" alt="LGBTQ+ Flagge" loading="lazy" /><span class="futura"
-				>Love is <span class="highlight">Love!</span></span>
+				>Love is <span class="highlight">Love</span></span>
 		</div>
 		<div class="copyright">
 			Copyright Mellowlight 2026 |
