@@ -19,6 +19,7 @@
 		<meta property="og:image:height" content="630">
 		<link rel="preload" href="assets/fonts/futura-pt-300.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="assets/fonts/futura-pt-400.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" as="image" href="images/weddings/brautpaar-regenschirm-romantisch.webp">
 		<link rel="stylesheet" href="assets/css/main.min.css" />
 		<script src="assets/js/loading.js" defer></script>
 		<!--Goatcounter-->
@@ -78,59 +79,16 @@
 					<a href="#kontakt" class="button special">Kontakt</a>
 				</div>
 			</nav>
-			<div class="image fit flush slideshow">
-				<picture>
-					<source media="(max-width: 736px)" 
-						srcset="
-							images/weddings/thumbnails/inniger-kuss-vor-funken.webp 800w,
-							images/weddings/inniger-kuss-vor-funken.webp 1667w" 
-							sizes="100vw"
-						/>
-					<source media="(min-width: 737px)" 
-						srcset=
-							"images/weddings/thumbnails/brautpaar-regenschirm-romantisch.webp 1200w, 
-							images/weddings/brautpaar-regenschirm-romantisch.webp 2500w" 
-							sizes="100vw"/>
-					<img
-						id="hero-image"
-						src="images/weddings/thumbnails/brautpaar-regenschirm-romantisch.webp"
-						alt="Paar steht unter leuchtendem Regenschirm bei Nachtr"
-						fetchpriority="high"
-						loading="eager"/>
-				</picture>
-				<picture>
-					<source
-						media="(max-width: 736px)"
-						srcset="
-							images/weddings/thumbnails/classy-braut-mit-schleier-diadem.webp 800w,
-							images/weddings/classy-braut-mit-schleier-diadem.webp 1667w" 
-							sizes="100vw"/>
-					<source media="(min-width: 737px)" 
-						srcset="
-							images/weddings/thumbnails/braut-schleier-diadem.webp 1200w,
-							images/weddings/braut-schleier-diadem.webp 2500w" 
-							sizes="100vw"/>
-					<img
-						src="images/weddings/thumbnails/braut-schleier-diadem.webp"
-						alt="Stilvolle Braut mit Schleier und Diadem"
-						loading="lazy" />
-				</picture>
-				<picture>
-					<source media="(max-width: 736px)" 
-						srcset="
-							images/weddings/thumbnails/brautpaar-steht-cool-vor-wand.webp 800w,
-							images/weddings/brautpaar-steht-cool-vor-wand.webp 1667w" 
-							sizes="100vw"/>
-					<source media="(min-width: 737px)" 
-						srcset="
-							images/weddings/thumbnails/brautpaar-steht-cool-vor-wand.webp 1200w,
-							images/weddings/brautpaar-steht-cool-vor-wand.webp 2500w" 
-							sizes="100vw"/>
-					<img
-						src="images/weddings/thumbnails/brautpaar-steht-cool-vor-wand.webp"
-						alt="Brautpaar steht symmetrisch vor einer Wand"
-						loading="lazy" />
-				</picture>
+				<div class="hero">
+				<video id="hero-video"
+				  autoplay 
+				  muted 
+				  loop 
+				  playsinline 
+				  preload="metadata"
+				  poster="images/weddings/brautpaar-regenschirm-romantisch.webp">
+				  <source src="images/mellowlight-herovideo.webm" type="video/webm">
+				</video>
 			</div>
 			<a
 				href="https://www.brautmagazin.de/hochzeitsblog/vorteile-einer-day-wedding/"
@@ -139,7 +97,7 @@
 				<img src="images/Badge_BB_DE_featured-in_2025.webp" alt="Braut & Bräutigam Magazin" width="150" height="150"/>
 			</a>
 			<div class="claim">
-				<h1>Für Paare, die ihre Hochzeit nicht für andere feiern.</h1>
+				<h1><span class="highlight no-wrap">Editorial Vibe</span> without the Ego</h1>
 				<p>Hochzeitsreportagen <span class="no-wrap">in Foto & Film</span></p>
 				<a href="#kontakt" class="button">Erzählt uns eure Geschichte</a>
 			</div>
