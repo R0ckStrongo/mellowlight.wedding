@@ -1,5 +1,5 @@
 // vars
-'use strict'
+'use strict';
 var	testim = document.getElementById("testim"),
 		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
     testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
@@ -13,7 +13,7 @@ var	testim = document.getElementById("testim"),
 		touchEndPos,
 		touchPosDiff,
 		ignoreTouch = 30;
-;
+
 
 window.onload = function() {
 
@@ -44,21 +44,21 @@ window.onload = function() {
         clearTimeout(testimTimer);
         testimTimer = setTimeout(function() {
             playSlide(currentSlide += 1);
-        }, testimSpeed)
+        }, testimSpeed);
     }
 
     testimLeftArrow.addEventListener("click", function() {
         playSlide(currentSlide -= 1);
-    })
+    });
 
     testimRightArrow.addEventListener("click", function() {
         playSlide(currentSlide += 1);
-    })    
+    });
 
     for (var l = 0; l < testimDots.length; l++) {
         testimDots[l].addEventListener("click", function() {
             playSlide(currentSlide = testimDots.indexOf(this));
-        })
+        });
     }
 
     playSlide(currentSlide);
@@ -81,11 +81,11 @@ window.onload = function() {
             default:
                 break;
         }
-    })
+    });
 		
 		testim.addEventListener("touchstart", function(e) {
 				touchStartPos = e.changedTouches[0].clientX;
-		}, {passive: true})
+		}, {passive: true});
 	
 		testim.addEventListener("touchend", function(e) {
 				touchEndPos = e.changedTouches[0].clientX;
@@ -105,5 +105,5 @@ window.onload = function() {
 					return;
 				}
 			
-		}, {passive: true})
-}
+		}, {passive: true});
+};

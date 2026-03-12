@@ -30,20 +30,7 @@
             <p class="subtitle">Hochzeitsreportagen in Foto & Film</p>
 			<div id="loading_indicator"></div>
 		</div>
-		<!--BANNER--
-		<div class="banner">
-			<div class="banner__content">
-				<div class="banner__text">
-					Jetzt euren Termin für 2024 sichern ✨
-				</div>
-				<button class="banner__close" type="button">
-					<span class="material-icons">
-						X
-					</span>
-				</button>
-			</div>
-		</div>
-		-->
+
 		<!-- Header -->
 		<header class="zoom-me" id="header">
 			<nav role="navigation" class="top-right open nav-mobile hidden">
@@ -148,12 +135,22 @@
 				</section>
 				<section class="white-white">
 					<div class="header__bg">
-						<img class="image parallax" 
-							 src="images/weddings/webp-1200/braut-mit-strauss-auf-mauer-vor-blauem-himmel.webp" 
-							 srcset="images/weddings/webp-1200/braut-mit-strauss-auf-mauer-vor-blauem-himmel.webp 1200w,
-									 images/weddings/webp-2000/braut-mit-strauss-auf-mauer-vor-blauem-himmel.webp 2000w"
-							 alt="Editorial Brautportrait im Toscana-Flair"
-							 loading="lazy"/>
+					<picture>
+							<source
+							  media="(max-width: 900px)"
+							  srcset="
+								images/weddings/webp-800/paar-auf-mauer-schaut-sich-an.webp 533w,
+								images/weddings/webp-1200/paar-auf-mauer-schaut-sich-an.webp 800w,
+								images/weddings/webp-2000/paar-auf-mauer-schaut-sich-an.webp 1334w"
+							  sizes="100vw">
+							<img
+							  class="image parallax"
+							  src="images/weddings/webp-2000/braut-mit-strauss-auf-mauer-vor-blauem-himmel.webp"
+							  sizes="100vw"
+							  alt="Einzug zur freien Trauung"
+							  loading="lazy"
+							  decoding="async">
+						</picture>
 					</div>
 				</section>
 								<section class="wrapper style2">
@@ -240,13 +237,24 @@
 				</section>
 				<section class="white-white">
 					<div class="header__bg">
-						<img class="image parallax" 
-							 src="images/weddings/webp-1200/paar-steht-vor-mauer-berlin.webp" 
-							 srcset="images/weddings/webp-1200/paar-steht-vor-mauer-berlin.webp 1200w,
-									 images/weddings/webp-2000/paar-steht-vor-mauer-berlin.webp 2000w"
-							 alt="Brautpaar auf der Museumsinsel Berlin"
-							 loading="lazy"/>
-					</div>
+						<picture>
+							<source
+							  media="(max-width: 900px)"
+							  srcset="
+								images/weddings/webp-800/paar-museumsinsel-berlin.webp 533w,
+								images/weddings/webp-1200/paar-museumsinsel-berlin.webp 800w,
+								images/weddings/webp-2000/paar-museumsinsel-berlin.webp 1334w"
+							  sizes="100vw">
+							<img
+							  class="image parallax"
+							  src="images/weddings/webp-2000/paar-steht-vor-mauer-berlin.webp"
+							  sizes="100vw"
+							  alt="Einzug zur freien Trauung"
+							  loading="lazy"
+							  fetchpriority="low"
+							  decoding="async">
+						</picture>
+					</div>	
 				</section>
 
 				<!-- ANGEBOTE -->
@@ -302,12 +310,23 @@
 
 				<section class="white-white">
 					<div class="header__bg">
-						<img class="image parallax" 
-							 src="images/weddings/webp-1200/paar-kuss-brandmuehle-massbach.webp" 
-							 srcset="images/weddings/webp-1200/paar-kuss-brandmuehle-massbach.webp 1200w,
-									 images/weddings/webp-2000/paar-kuss-brandmuehle-massbach.webp 2000w"
-							 alt="Brautpaar-Shooting in der Schweinfurter Rhön"
-							 loading="lazy"/>
+						<picture>
+							<source
+							  media="(max-width: 900px)"
+							  srcset="
+								images/weddings/webp-800/brautpaar-im-regen-braunschweig.webp 533w,
+								images/weddings/webp-1200/brautpaar-im-regen-braunschweig.webp 800w,
+								images/weddings/webp-2000/brautpaar-im-regen-braunschweig.webp 1334w"
+							  sizes="100vw">
+							<img
+							  class="image parallax"
+							  src="images/weddings/webp-2000/paar-kuss-brandmuehle-massbach.webp"
+							  sizes="100vw"
+							  alt="Einzug zur freien Trauung"
+							  loading="lazy"
+							  fetchpriority="low"
+							  decoding="async">
+						</picture>
 					</div>
 				</section>
 
@@ -315,7 +334,7 @@
 				<section class="wrapper style1 testim">
 					<header id="testim">
 						<h2>Worte unserer Paare</h2>
-						<p>ungefiltert, ehrlich und direkt</p>
+						<p>Feedback von Paaren, deren Tag wir begleiten durften</p>
 					</header>
 					<div class="wrap hidden">
 						<span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
@@ -325,74 +344,87 @@
 							<li class="dot"></li>
 							<li class="dot"></li>
 							<li class="dot"></li>
+							<li class="dot"></li>
 						</ul>
 						<div id="testim-content" class="cont">
 							<div class="testim-tile active">
-								<div class="img"><img src="images/testimonials/n-m.webp" alt="" loading="lazy" /></div>
+								<div class="img"><img src="images/testimonials/paarfoto-im-gruenen.webp" alt="Hochzeitspaar aus Mellrichstadt" loading="lazy" /></div>
 								<div class="testim-text">
-									
 									<p>
-										Wir haben gerade zusammen alle Fotos angeschaut und sind absolut begeistert!
-										Eure Fotos sind mega schön geworden und spiegeln genau unseren Tag wieder mit
-										allen Emotionen und Details 🥰 Ihr habt wirklich Talent alle kleinen besonderen
-										Momente vollkommen einzufangen! Vielen Dank für die wunderbaren Bilder!
+										Wir haben gerade zusammen alle Fotos angeschaut und sind absolut begeistert! 
+										Eure Fotos sind mega schön geworden und spiegeln genau unseren Tag wieder mit allen Emotionen und Details 🥰
+										Ihr habt wirklich Talent alle kleinen besonderen Momente vollkommen einzufangen! 
+										Vielen Dank für die wunderbaren Bilder!
 									</p>
 									<p class="signature">Nicole + Markus</p>
 								</div>
 							</div>
 							<div class="testim-tile">
-								<div class="img"><img src="images/testimonials/l-j.webp" alt="" loading="lazy" /></div>
+								<div class="img"><img src="images/testimonials/l-j.webp" alt="Hochzeitspaar aus Berlin" loading="lazy" /></div>
 								<div class="testim-text">
-									
 									<p>
-										Wir haben uns über die Bilder sehr gefreut, sie sind sehr schön geworden. Ich
-										freue mich auch sehr, dass ich jedem Gast mindestens ein besonders gut
-										gelungenes Bild von ihm bzw. ihr schenken konnte (wenn nicht sogar mehr als
-										eines). Habt vielen Dank für alles.
+										Wir haben uns über die Bilder sehr gefreut, sie sind sehr schön geworden. 
+										Ich freue mich auch sehr, dass ich jedem Gast mindestens ein besonders gut 
+										gelungenes Bild von ihm bzw. ihr schenken konnte (wenn nicht sogar mehr als eines).
+										Vielen Dank für alles!
 									</p>
 									<p class="signature">Lina + Jakob</p>
 								</div>
 							</div>
 							<div class="testim-tile">
-								<div class="img"><img src="images/testimonials/m-d.webp" alt="" loading="lazy" /></div>
+								<div class="img"><img src="images/testimonials/braeutigam-traegt-braut-hassfurt.webp" alt="Hochzeitspaar aus Hassfurt" loading="lazy" /></div>
 								<div class="testim-text">
-									
 									<p>
-										Wir sind mega glücklich und könnten 100 Mal Danke sagen - war alles echt super
-										und die Bilder sind sooo schön 😍😍😍
-										<br />Haben auch alle nochmal gesagt wie lieb und toll ihr wart - wie ein Teil
-										der Familie 🥰
+										Wir sind mega glücklich und könnten 100 Mal Danke sagen - war alles echt super und die Bilder sind sooo schön!<br/>
+										Haben auch alle nochmal gesagt wie lieb und toll ihr wart - wie ein Teil der Familie 🥰
 									</p>
 									<p class="signature">Michelle + Dino</p>
 								</div>
 							</div>
 							<div class="testim-tile">
-								<div class="img"><img src="images/testimonials/s-m.webp" alt="" loading="lazy" /></div>
+								<div class="img"><img src="images/testimonials/paar-lehnt-an-burg-tor.webp" alt="Hochzeitspaar aus Bamberg" loading="lazy" /></div>
 								<div class="testim-text">
-									
 									<p>
-										Wir wollten uns nochmal für den gelungenen Abschluss und dein tolles Shooting
-										bedanken! Das sind tolle Bilder geworden und eine super Erinnerung für uns!
-										Herzlichen Dank dafür!
+										Hi Marie-Claire und Martin :) <br/>
+										Die Bilder sind echt super, super schön und wir haben uns mega gefreut. Vielen, vielen Dank für die unvergesslichen Erinnerungen 🫶
 									</p>
-									<p class="signature">Sarah + Martin</p>
+									<p class="signature">Sarah + Daniel</p>
+								</div>
+							</div>
+							<div class="testim-tile">
+								<div class="img"><img src="images/testimonials/paar-schaut-sich-vor-blaetterwand-in-die-augen.webp" alt="Hochzeitspaar aus Braunschweig" loading="lazy" /></div>
+								<div class="testim-text">
+									<p>
+										Hallo ihr beiden, das sind wirklich tolle (und viele) Bilder geworden, wir sind sehr glücklich damit. <br/>
+										Wir gucken uns die Bilder auch nach zwei Jahren immer noch gerne an und sind immer noch begeistert, wie schön sie geworden sind!
+									</p>
+									<p class="signature">Regina + Andre</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-
 				<section class="white-white">
 					<div class="header__bg">
-						<img class="image parallax" 
-							 src="images/weddings/webp-1200/brautpaar-geht-in-sonne-spazieren-sw.webp" 
-							  srcset="images/weddings/webp-1200/brautpaar-geht-in-sonne-spazieren-sw.webp 1200w,
-									  images/weddings/webp-1200/brautpaar-geht-in-sonne-spazieren-sw.webp 2000w"
-							 alt="Einzug zur freien Trauung"
-							 loading="lazy"/>
+						<picture>
+							<source
+							  media="(max-width: 900px)"
+							  srcset="
+								images/weddings/webp-800/paar-kommt-aus-standesamt-massbach-sw.webp 533w,
+								images/weddings/webp-1200/paar-kommt-aus-standesamt-massbach-sw.webp 800w,
+								images/weddings/webp-2000/paar-kommt-aus-standesamt-massbach-sw.webp 1334w"
+							  sizes="100vw">
+							<img
+							  class="image parallax"
+							  src="images/weddings/webp-2000/brautpaar-geht-in-sonne-spazieren-sw.webp"
+							  sizes="100vw"
+							  alt="Einzug zur freien Trauung"
+							  loading="lazy"
+							  fetchpriority="low"
+							  decoding="async">
+						</picture>
 					</div>
 				</section>
-
 				<!--CONTACT -->
 				<section class="wrapper style1" id="kontakt">
 					<header>
@@ -402,15 +434,10 @@
 
 					<div class="content">
 						<p class="hidden">
-							<!--Wir begleiten Hochzeiten mit einem klaren Blick für Ästhetik und echte Momente. Unaufgeregt,
-							aufmerksam und mit dem Anspruch, Erinnerungen zu schaffen, die bleiben. Wenn ihr euch
-							zeitlose Foto- und Filmreportagen wünscht und Wert auf eine entspannte, persönliche
-							Zusammenarbeit legt, freuen wir uns, von euch zu hören.-->
 							Die meisten Paare schreiben uns, wenn sie ein gutes Gefühl haben.
 							Kein fertiges Konzept. Kein perfekter Plan. Nur Intuition.
 							<br/>
 							Und ganz ehrlich – mehr braucht es am Anfang auch nicht.
-
 						</p>
 						<div class="row 200%">
 							<div class="6u 12u$(medium)">
@@ -548,21 +575,6 @@
 				</section>
 			</div>
 		</section>
-
-		<!-- RSS Feeed from Blog 
-			<section id="blog" class="wrapper style2">
-				<header>
-				<h2>Lesenswertes</h2>
-				<p>Die neusten Eintrage aus unserem Blog</p>
-				</header>
-				<div class="content" id="rss-feeds"></div>
-				<br>
-				<div>
-					<a href="https://r0ckstrongo.github.io/mellowlight.blog/" class="button special fit">Weiter Beiträge lesen</a>
-				</div>
-			</section>
-			-->
-
 		<!-- Cookie Banner -->
 		<div class="cookiewrapper">
 			<header>
