@@ -1,0 +1,717 @@
+<!DOCTYPE HTML>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Leistungen &amp; Preise – Hochzeitsfotograf Schweinfurt | Mellowlight</title>
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+		<meta name="description" content="Hochzeitsreportage ab 3.199 € und Standesamtbegleitung ab 599 €. Was dazugehört, wie eine Zusammenarbeit abläuft und was ihr von uns erwarten könnt.">
+		<meta name="author" content="Mellowlight - Marie-Claire &amp; Martin">
+		<link rel="canonical" href="https://mellowlight.de/angebote" />
+		<meta name="robots" content="index, follow, max-image-preview:large">
+
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Mellowlight">
+		<meta property="og:locale" content="de_DE">
+		<meta property="og:title" content="Leistungen &amp; Preise – Hochzeitsfotograf Schweinfurt | Mellowlight">
+		<meta property="og:description" content="Hochzeitsreportage ab 3.199 € und Standesamtbegleitung ab 599 €. Was dazugehört und wie eine Zusammenarbeit abläuft.">
+		<meta property="og:url" content="https://mellowlight.de/angebote">
+		<meta property="og:image" content="https://mellowlight.de/images/social-image.jpg">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+
+		<link rel="stylesheet" href="assets/css/main.min.css"/>
+
+		<!--
+			Nur für diese Seite. Alles andere kommt aus main.min.css.
+			Farben exakt wie auf der übrigen Website.
+		-->
+		<style>
+			.ls-lead{max-width:46rem;margin:0 auto;text-align:left}
+			.ls-lead p{font-size:1.1rem;line-height:1.7}
+			.ls-text{max-width:44rem;margin:0 auto;text-align:left}
+			.ls-text h2{margin:0 0 1.25rem}
+			.ls-text p{margin:0 0 1.25rem}
+			.ls-text p:last-child{margin-bottom:0}
+			.ls-small{font-size:.9rem;line-height:1.7;color:#6f6f6f}
+
+			.ls-eyebrow{font-family:futura-pt,sans-serif;font-weight:300;font-size:.75rem;
+				letter-spacing:.25rem;text-transform:uppercase;color:#6f6f6f;margin:0 0 .5rem}
+
+			/* Preis: die Zahl trägt, der Zusatz erklärt */
+			.ls-price{margin:1.5rem 0 0}
+			.ls-price__num{font-family:futura-pt,sans-serif;font-weight:300;
+				font-size:2.25rem;line-height:1.1;color:#111}
+			.ls-price__note{display:block;margin-top:.4rem;font-size:.85rem;color:#6f6f6f}
+
+			/* Leistungsumfang und FAQ: Beschreibungsliste statt Häkchen */
+			.ls-specs{max-width:44rem;margin:0 auto;text-align:left}
+			.ls-specs>div{display:flex;flex-wrap:wrap;gap:.35rem 2rem;
+				padding:1.1rem 0;border-bottom:1px solid #e5e5e5}
+			.ls-specs>div:first-child{border-top:1px solid #e5e5e5}
+			.ls-specs dt{flex:0 0 11rem;font-family:futura-pt,sans-serif;font-weight:400;
+				font-size:.8rem;letter-spacing:.12rem;text-transform:uppercase;color:#111}
+			.ls-specs dd{flex:1 1 18rem;margin:0;line-height:1.7}
+
+			/* Ergänzungen */
+			.ls-addons{max-width:52rem;margin:2.5rem auto 0;text-align:left;
+				display:grid;grid-template-columns:repeat(2,1fr);gap:2.5rem 3rem}
+			.ls-addons h3{margin:0 0 .6rem;font-size:1.15rem}
+			.ls-addons p{margin:0;line-height:1.7;font-size:.95rem}
+			.ls-addon__price{margin-top:.6rem!important;font-family:futura-pt,sans-serif;
+				font-size:.8rem;letter-spacing:.12rem;text-transform:uppercase;color:#3a2230}
+
+			/* --- Ablauf --- */
+			/* Die fixierte Navigation ist 70px hoch. Ohne diesen Wert verschwindet
+			   die Überschrift beim Sprung von about.html#ablauf darunter. */
+			#ablauf{scroll-margin-top:90px}
+
+			.ls-steps{max-width:56rem;margin:3rem auto 0;text-align:left}
+			.ls-step{display:grid;grid-template-columns:14rem 1fr;gap:0 3rem;
+				padding-bottom:clamp(3.5rem,7vw,6rem)}
+			.ls-step__head{position:relative}
+			.ls-step__num{font-family:futura-pt,sans-serif;font-weight:300;
+				font-size:clamp(3rem,6vw,4.5rem);line-height:1;color:#3a2230;margin:0 0 .75rem}
+			.ls-step__head h3{margin:0;padding-top:.75rem;border-top:1px solid #e5e5e5;
+				font-size:1.2rem;line-height:1.3}
+			.ls-step__body p{margin:0 0 1.25rem;line-height:1.75}
+			.ls-step__body p:last-child{margin-bottom:0}
+			.ls-step__figure{margin:1.75rem 0 0}
+			.ls-step__figure img{width:100%;height:auto;display:block}
+			.ls-step__pair{display:grid;grid-template-columns:1fr 1.5fr;gap:1rem;margin-top:1.75rem}
+			.ls-step__pair img{width:100%;height:100%;object-fit:cover;display:block}
+
+			/* Das eine Bild, das volle Breite bekommt */
+			.ls-wide{margin:0 0 clamp(3.5rem,7vw,6rem);width:100%}
+			.ls-wide img{width:100%;height:auto;display:block}
+
+			@media screen and (max-width:980px){
+				.ls-addons{grid-template-columns:1fr;gap:2.25rem}
+				.ls-step{grid-template-columns:1fr;gap:1.25rem}
+				.ls-step__head{display:flex;align-items:baseline;gap:1rem}
+				.ls-step__num{margin:0;font-size:2.75rem}
+				.ls-step__head h3{border-top:0;padding-top:0}
+			}
+			@media screen and (max-width:736px){
+				.ls-specs dt{flex:1 1 100%}
+				.ls-price__num{font-size:1.9rem}
+			}
+		</style>
+
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@graph": [
+		    {
+		      "@type": "WebPage",
+		      "@id": "https://mellowlight.de/leistungen#webpage",
+		      "url": "https://mellowlight.de/leistungen",
+		      "name": "Leistungen & Preise – Hochzeitsfotograf Schweinfurt",
+		      "inLanguage": "de-DE",
+		      "about": { "@id": "https://mellowlight.de/#organization" }
+		    },
+		    {
+		      "@type": "Service",
+		      "@id": "https://mellowlight.de/leistungen#ganztag",
+		      "name": "Hochzeitsreportage (Ganztagesbegleitung)",
+		      "serviceType": "Hochzeitsfotografie",
+		      "provider": { "@id": "https://mellowlight.de/#organization" },
+		      "areaServed": ["Schweinfurt", "Würzburg", "Unterfranken", "Bayern", "Deutschland"],
+		      "offers": {
+		        "@type": "Offer",
+		        "price": "3199",
+		        "priceCurrency": "EUR",
+		        "availability": "https://schema.org/InStock",
+		        "url": "https://mellowlight.de/leistungen"
+		      }
+		    },
+		    {
+		      "@type": "Service",
+		      "@id": "https://mellowlight.de/leistungen#standesamt",
+		      "name": "Standesamtreportage",
+		      "serviceType": "Hochzeitsfotografie",
+		      "provider": { "@id": "https://mellowlight.de/#organization" },
+		      "areaServed": ["Schweinfurt", "Würzburg", "Unterfranken"],
+		      "offers": {
+		        "@type": "Offer",
+		        "price": "599",
+		        "priceCurrency": "EUR",
+		        "priceSpecification": {
+		          "@type": "PriceSpecification",
+		          "minPrice": "599",
+		          "priceCurrency": "EUR"
+		        },
+		        "availability": "https://schema.org/InStock",
+		        "url": "https://mellowlight.de/leistungen"
+		      }
+		    }
+		  ]
+		}
+		</script>
+
+		<!--Goatcounter-->
+		<script data-goatcounter="https://mellowlight.goatcounter.com/count"
+				async src="//gc.zgo.at/count.js"></script>
+
+	</head>
+	<body id="home">
+
+		<!-- Header -->
+		<header id="header">
+			<nav role="navigation" class="top-right open nav-mobile hidden">
+				<a href="https://mellowlight.de" class="disc l2"><div>Home</div></a>
+				<a href="about.html" class="disc l3"><div>Über uns</div></a>
+				<a href="gallery.html" class="disc l4"><div>Stories</div></a>
+				<a href="angebote.html" class="disc l5"><div>Angebote</div></a>
+				<a href="faq.html" class="disc l6"><div>FAQ</div></a>
+				<a href="anfrage.html" class="disc l7"><div>Anfragen</div></a>
+				<a class="disc l8 toggle" id="burger-toggle">
+					<svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#0f0817}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+				</a>
+			</nav>
+			<nav class="navbar hidden" id="navbar">
+				<a href="index.html" class="nav-left">MELLOW<span class="highlight">LIGHT</span></a>
+				<div class="nav-center">
+				  <a href="about.html">Über uns</a>
+				  <a href="gallery.html">Stories</a>
+				  <a href="angebote.html">Angebote</a>
+				  <a href="faq.html">FAQ</a>
+				</div>
+				<div class="nav-right">
+				  <a href="anfrage.html" class="button special">Anfragen</a>
+				</div>
+			</nav>
+		</header>
+
+		
+		<!-- Main -->
+		<section id="main">
+			<div class="inner">
+
+				<!-- HERO -->
+				<section class="wrapper style1">
+					<p><br/></p>
+					<header>
+						<h1>Das passende Angebot für Eure Hochzeitsreportage</h1>
+						<p>Zwei Fotografen, ein ganzer Tag, kein Zeitdruck</p>
+					</header>
+					<div class="content">
+						<div class="ls-lead">
+							<p>
+								Eine Hochzeit zu fotografieren heißt für uns, Verantwortung für Erinnerungen 
+								zu übernehmen, die es nur einmal gibt. Was dazugehört, wie wir arbeiten und 
+								was es kostet, erfahrt ihr hier, ohne erst anfragen zu müssen.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- 1 · GANZTAGESREPORTAGE -->
+				<section class="wrapper style1">
+					<div class="spotlight hidden">
+						<div class="image flush">
+							<img srcset="images/weddings/webp-800/paar-auf-mauer-schaut-sich-an.webp 533w,
+										 images/weddings/webp-1200/paar-auf-mauer-schaut-sich-an.webp 800w,
+										 images/weddings/webp-2000/paar-auf-mauer-schaut-sich-an.webp 1333w"
+								 sizes="(min-width: 981px) 50vw, 100vw"
+								 src="images/weddings/webp-1200/paar-auf-mauer-schaut-sich-an.webp"
+								 alt="Brautpaar schaut sich in die Augen mit farbenfrohem Brautstrauss"
+								 loading="eager" fetchpriority="high">
+						</div>
+						<div class="inner">
+							<p class="ls-eyebrow">Das Hauptangebot</p>
+							<h2>Die Hochzeitsreportage</h2>
+							<p>
+								Wir beginnen, wann ihr uns braucht, und bleiben so lange, wie ihr uns braucht. 
+								Es gibt keine Stundenpakete, bei denen jemand mitzählt, und keinen Punkt am Abend, 
+								an dem wir kommentarlos die Kamera einpacken.
+							</p>
+							<p>
+								Wir sind dabei immer zu zweit. Beim Getting Ready an zwei Orten
+								gleichzeitig, bei der Trauung mit zwei Perspektiven, und während
+								eine:r von uns bei euch ist, sieht der oder die andere, was daneben
+								passiert.
+							</p>
+							<p class="ls-price">
+								<span class="ls-price__num">3.199</span>&nbsp;&euro;
+								<span class="ls-price__note">inklusive Anfahrt bis 100&nbsp;km &middot; Samstags und an Feiertagen bieten wir nur Ganztagesreportagen an</span>
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- 2 · WAS DAZUGEHÖRT -->
+				<section class="wrapper style1">
+					<div class="content">
+						<div class="ls-text hidden">
+							<h2>Was dazugehört</h2>
+						</div>
+						<dl class="ls-specs hidden">
+							<div>
+								<dt>Begleitung</dt>
+								<dd>Ab dem Zeitpunkt, den ihr wollt, ohne Stundenbegrenzung, längstens bis 24&nbsp;Uhr. Darüber hinaus nach vorheriger Absprache zu einem Verlängerungssatz.</dd>
+							</div>
+							<div>
+								<dt>Zwei Fotografen</dt>
+								<dd>Den ganzen Tag, nicht nur zur Trauung.</dd>
+							</div>
+							<div>
+								<dt>Bilder</dt>
+								<dd>Mindestens 500 bearbeitete Aufnahmen, von Hand ausgewählt und auf kalibrierten Monitoren bearbeitet.</dd>
+							</div>
+							<div>
+								<dt>Erste Bilder</dt>
+								<dd>Am Tag nach eurer Hochzeit, damit ihr nicht wochenlang wartet.</dd>
+							</div>
+							<div>
+								<dt>Galerie</dt>
+								<dd>Passwortgeschützt, mit Download in voller Auflösung.</dd>
+							</div>
+							<div>
+								<dt>Vorbereitung</dt>
+								<dd>Unser Wedding Guide, Erreichbarkeit bis zur Hochzeit und ein ausführliches Vorgespräch.</dd>
+							</div>
+							<div>
+								<dt>Nutzungsrechte</dt>
+								<dd>Private Nutzung ohne Einschränkung. Dienstleister, die eure Bilder verwenden möchten, wenden sich bitte an uns.</dd>
+							</div>
+							<div>
+								<dt>Anfahrt</dt>
+								<dd>Bis 100&nbsp;km ab Schweinfurt inklusive. Weiter fahren wir gerne, dann kommen Fahrtkosten dazu.</dd>
+							</div>
+						</dl>
+					</div>
+				</section>
+
+				<!-- 3 · STANDESAMT -->
+				<section class="wrapper style1">
+					<div class="spotlight alt hidden">
+						<div class="image flush">
+							<img srcset="images/weddings/webp-800/kuss-mit-brautschleier.webp 533w,
+										 images/weddings/webp-1200/kuss-mit-brautschleier.webp 800w,
+										 images/weddings/webp-2000/kuss-mit-brautschleier.webp 1334w"
+								 sizes="(min-width: 981px) 50vw, 100vw"
+								 src="images/weddings/webp-1200/kuss-mit-brautschleier.webp"
+								 alt="Brautpaar küsst sich innig nach Trauung mit Schleier im Vordergrund"
+								 loading="lazy">
+						</div>
+						<div class="inner">
+							<p class="ls-eyebrow">Unter der Woche</p>
+							<h2>Die Standesamtreportage</h2>
+							<p>
+								Kein verkleinertes Hochzeitspaket, sondern ein eigenes Format
+								für Paare, unter der Woche standesamtlich heiraten und trotzdem alle Erinnerungen daran behalten
+								wollen.
+							</p>
+							<p>
+								Enthalten sind die Trauung im Standesamt, der Sektempfang und ein Paarshooting in der unmittelbaren Umgebung.
+							</p>
+							<p class="ls-price">
+								<span class="ls-price__num">ab 599</span>&nbsp;&euro;
+								<span class="ls-price__note">Montag bis Freitag</span>
+							</p>
+							<p class="ls-small">
+								Wenn ihr darüber hinaus ein Paarshooting an einem anderen Ort möchtet
+								oder abends noch gemeinsam essen geht, empfehlen wir die
+								Ganztagesreportage. Nicht, weil wir es lieber verkaufen, sondern weil
+								ihr dann nicht auf die Uhr schauen müsst.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- 4 · ERGÄNZUNGEN -->
+				<section class="wrapper style1">
+					<div class="content">
+						<div class="ls-text hidden">
+							<h2>Ergänzungen</h2>
+							<p>
+								Alles hier ist optional und lässt sich einzeln dazubuchen. Nichts
+								davon braucht ihr, damit eure Hochzeitsreportage vollständig ist.
+							</p>
+						</div>
+						<div class="ls-addons hidden">
+							<article>
+								<h3>Highlightfilm</h3>
+								<p>
+									Zwei bis drei Minuten, cineastisch geschnitten und auf einen Song
+									gelegt. Kein Interview, kein Originalton, sondern ein Film, den man
+									sich ansieht wie ein Musikvideo. Wir filmen ihn parallel zur
+									Fotografie an eurem Hochzeitstag.
+								</p>
+								<p class="ls-addon__price">799&nbsp;&euro;</p>
+							</article>
+							<article>
+								<h3>Engagement Shooting</h3>
+								<p>
+									Ein etwa einstündiges Fotoshooting vor der Hochzeit. Ihr wisst danach, wie wir arbeiten, 
+									und wir wissen, wie ihr vor einer Kamera reagiert. Am Hochzeitstag merkt 
+									man diese Erfahrung. Diese Fotos eignen sich perfekt für eure Einladungen. 
+									Ob ihr verlobt seid, spielt dabei keine Rolle. 
+									Es funktioniert genauso als Paarshooting ohne Anlass.
+								</p>
+								<p class="ls-addon__price">499&nbsp;&euro;</p>
+								<!-- Sobald der Journal-Beitrag online ist, hier ergänzen:
+								<p class="ls-addon__link"><a href="https://blog.mellowlight.de/engagement-shooting/">Ein Beispiel im Journal ansehen</a></p>
+								-->
+							</article>
+							<article>
+								<h3>After Wedding Shooting</h3>
+								<p>
+									Ohne Zeitdruck, ohne Gäste, mit freier Wahl von Ort und Licht
+									für etwa zwei Stunden. Das Kleid darf schmutzig werden, und
+									niemand wartet auf euch. Geht auch dann, wenn wir eure Hochzeit
+									nicht fotografiert haben.
+								</p>
+								<p class="ls-addon__price">599&nbsp;&euro;</p>
+								<!-- Sobald der Journal-Beitrag online ist, hier ergänzen:
+								<p class="ls-addon__link"><a href="https://blog.mellowlight.de/after-wedding-shooting/">Ein Beispiel im Journal ansehen</a></p>
+								-->
+							</article>
+							<article>
+								<h3>Hochzeitsfilm</h3>
+								<p>
+									Die ausführliche Variante: bis zu 15 Minuten, mit Originalton
+									&mdash; Trauversprechen, Reden, die Stimmen des Tages. Wir
+									begleiten den Tag dafür zu zweit mit Kamera und Ton. Das heißt
+									aber auch: An diesem Tag filmen wir <em>statt</em> zu
+									fotografieren, nicht zusätzlich.
+								</p>
+								<p class="ls-addon__price">auf Anfrage</p>
+							</article>
+						</div>
+					</div>
+				</section>
+
+				<!-- 5 · ABLAUF -->
+				<section class="wrapper style1" id="ablauf">
+					<div class="content">
+						<div class="ls-text hidden">
+							<h2>Wie eine Zusammenarbeit abläuft</h2>
+							<p>
+								Von der ersten Nachricht bis zu euren fertigen Bildern vergehen 
+								meistens ein paar Monate. Damit ihr wisst, was in dieser Zeit 
+								passiert und wann ihr von uns hört, zeigen wir euch hier den gesamten Ablauf.
+							</p>
+						</div>
+
+						<div class="ls-steps">
+
+							<article class="ls-step hidden">
+								<div class="ls-step__head">
+									<p class="ls-step__num" aria-hidden="true">01</p>
+									<h3>Eure Anfrage</h3>
+								</div>
+								<div class="ls-step__body">
+									<p>
+										Ihr schreibt uns über das Formular, mit Datum, Ort und dem, was
+										ihr euch vorstellt. Dort könnt ihr angeben, ob ihr lieber eine
+										E-Mail oder einen Anruf als Rückmeldung möchtet. Wir halten uns daran.
+									</p>
+									<p>
+										Innerhalb von 24 Stunden hört ihr von uns. Wenn wir telefonieren, dauert 
+										das in der Regel keine fünf Minuten. Wir klären, ob euer Termin frei ist, 
+										was eine Begleitung kostet und was ihr geplant habt. Kein Verkaufsgespräch.
+										Es geht nur um drei Dinge: 
+										Passt der Termin, passt die Leistung, passt es zwischen uns?
+									</p>
+								</div>
+							</article>
+
+							<article class="ls-step hidden">
+								<div class="ls-step__head">
+									<p class="ls-step__num" aria-hidden="true">02</p>
+									<h3>Wenn alles passt</h3>
+								</div>
+								<div class="ls-step__body">
+									<p>
+										Wollt ihr uns buchen, schicken wir euch den Vertrag. Darin stehen
+										die vereinbarten Leistungen, der Preis und die Rahmenbedingungen
+										 in verständlichem Deutsch, nicht in Paragrafen.
+									</p>
+									<p>
+										Der Vertrag ist keine Formalität, sondern eine Absicherung für beide Seiten: 
+										Ihr wisst, was ihr bekommt, und wir wissen, worauf wir uns einstellen. 
+										Mit eurer Unterschrift und der darauf folgenden Anzahlung 
+									
+									</p>
+								</div>
+							</article>
+
+							<article class="ls-step hidden">
+								<div class="ls-step__head">
+									<p class="ls-step__num" aria-hidden="true">03</p>
+									<h3>Die Zeit dazwischen</h3>
+								</div>
+								<div class="ls-step__body">
+									<p>
+										Nach Vertragsunterzeichnung bekommt ihr die erste Teilrechnung. Ist diese Bezahlt, 
+										ist euer Termin verbindlich für euch reserviert.
+									</p>
+									<p>
+										Außerdem bekommt ihr unseren Wedding Guide. Darin steckt, was wir aus vielen 
+										Hochzeiten gelernt haben: Wie viel Zeit einzelne Punkte wirklich brauchen, 
+										worauf es beim Licht ankommt, wie ein Getting Ready entspannt abläuft, 
+										wie Gruppenfotos funktionieren und wo es erfahrungsgemäß schnell eng wird.
+										So könnt ihr viele Entscheidungen schon vorher treffen und einen Tagesablauf planen, 
+										der realistisch ist und trotzdem Luft für spontane Momente lässt.
+									</p>
+									<p>
+										Danach verschwinden wir nicht bis zum Hochzeitstag. Wenn ihr zwischendurch Fragen habt, 
+										etwa zum Zeitplan, Licht oder First Look, schreibt uns einfach.
+										Wir planen eure Hochzeit nicht, sind aber überall dort erreichbar, wo unsere Erfahrung weiterhilft.
+									</p>
+								</div>
+							</article>
+
+							<article class="ls-step hidden">
+								<div class="ls-step__head">
+									<p class="ls-step__num" aria-hidden="true">04</p>
+									<h3>Das ausführliche Vorgespräch</h3>
+								</div>
+								<div class="ls-step__body">
+									<p>
+										Zwei Wochen bis einen Monat vor eurer Hochzeit nehmen wir uns eine Stunde Zeit 
+										und gehen euren Tag gemeinsam durch. Nicht als Fragebogen, sondern als Gespräch.
+									</p>
+									<p>
+										Wir wollen wissen, wie dieser Tag konkret aussieht: wann was passiert, 
+										wer die Menschen sind, auf die es ankommt, welche Programmpunkte euch wichtig sind 
+										und wo es Überraschungen gibt, von denen die andere Person nichts wissen darf. 
+										Auch Dinge wie First Look, Gruppenfotos und die Zeit für ein Paarshooting klären wir dabei.
+									</p>
+									<p>
+										Am Ende dieses Gesprächs kennen wir euren Hochzeitstag fast so gut wie ihr. 
+										Deshalb müssen wir am Tag selbst nicht mehr fragen. 
+										Im Anschluss geht die zweite Teilrechnung raus.
+									</p>
+									<figure class="ls-step__figure">
+										<img srcset="images/about/Kontaktbild-800.webp 799w,
+													 images/about/Kontaktbild-1200.webp 1200w"
+											 sizes="(min-width: 981px) 32rem, 100vw"
+											 src="images/about/Kontaktbild-1200.webp"
+											 alt="Marie-Claire und Martin sitzen mit Laptop und Kameras an einem Tisch"
+											 loading="lazy">
+									</figure>
+								</div>
+							</article>
+
+							<article class="ls-step hidden">
+								<div class="ls-step__head">
+									<p class="ls-step__num" aria-hidden="true">05</p>
+									<h3>Euer Hochzeitstag</h3>
+								</div>
+								<div class="ls-step__body">
+									<p>
+										Ab hier müsst ihr euch um die Fotografie keine Gedanken mehr
+										machen.
+									</p>
+									<p>
+										Wir sind zu zweit vor Ort. Beim Getting Ready können wir uns aufteilen, 
+										bei der Trauung fotografieren wir aus zwei Perspektiven: das Geschehen der Zeremonie 
+										und gleichzeitig die Reaktionen der Gäste. 
+										
+									</p>
+									<p>
+										Wir arbeiten so unauffällig wie möglich und lassen den Tag
+										stattfinden. Wenn es nötig wird, geben wir Orientierung. 
+										Etwa beim Gruppenfoto, wenn dreißig Menschen
+										sortiert werden müssen oder wenn der Zeitplan zu kippen droht.
+									</p>
+								</div>
+							</article>
+							<article class="ls-step hidden">
+								<div class="ls-step__head">
+									<p class="ls-step__num" aria-hidden="true">06</p>
+									<h3>Am Tag danach</h3>
+								</div>
+								<div class="ls-step__body">
+									<p>
+										Am Tag nach eurer Hochzeit liegen die ersten Vorschaubilder in eurem
+										Postfach.
+									</p>
+									<p>
+										Keine große Auswahl, nur eine Handvoll. Genug, um sie am Sonntagmorgen gemeinsam
+										anzuschauen, im Status zu teilen und Familie und Freunden zu schicken, 
+										die schon am Abend gefragt haben.
+									</p>
+									<p>
+										Wir machen das, weil ein Hochzeitstag am nächsten Morgen sehr
+										plötzlich vorbei ist. Ein paar Bilder verlängern ihn um ein
+										Stück.
+									</p>
+								</div>
+							</article>
+
+							<article class="ls-step hidden">
+								<div class="ls-step__head">
+									<p class="ls-step__num" aria-hidden="true">07</p>
+									<h3>Eure fertige Hochzeitsreportage</h3>
+								</div>
+								<div class="ls-step__body">
+									<p>
+										Die vollständige Galerie bekommt ihr innerhalb von acht Wochen
+										nach eurer Hochzeit. Bei einer Standesamtbegleitung unter der
+										Woche geht es erfahrungsgemäß schneller.
+									</p>
+									<p>
+										Was in dieser Zeit passiert: Zuerst werden die Rohdaten mehrfach
+										gesichert. Danach sichten wir den kompletten Tag und wählen von
+										Hand aus. Jedes Bild einzeln, nicht per
+										Stapelverarbeitung. Anschließend bearbeiten wir die Auswahl Bild für Bild auf
+										kalibrierten Monitoren, damit die Farben auch stimmen. Zum Schluss
+										entsteht daraus eure fertige Galerie.
+									</p>
+								</div>
+							</article>
+
+							<article class="ls-step hidden">
+								<div class="ls-step__head">
+									<p class="ls-step__num" aria-hidden="true">08</p>
+									<h3>Und danach</h3>
+								</div>
+								<div class="ls-step__body">
+									<p>
+										Wenn ihr eure Bilder gesehen habt, freuen wir uns über eure ehrliche
+										Rückmeldung. Wir
+										arbeiten seit 2018 als Hochzeitsfotografen und werden immer besser
+										darin, weil Paare uns sagen, was ihnen wichtig war.
+									</p>
+									<p>
+										Und wenn ihr zufrieden wart hilft eine Bewertung bei Google dem
+										nächsten Paar, das gerade dort sitzt, wo ihr vor einem Jahr
+										saßt und sich fragt, wem es seinen Hochzeitstag
+										anvertrauen kann. Kein Bild und kein Text auf dieser Seite
+										beantwortet das so gut wie zwei Sätze von jemandem, der es selbst
+										erlebt hat.
+									</p>
+									<!--p>
+										<a href="https://g.page/r/CT5sCUcDSBoCEBI/review" target="_blank" rel="noopener">Bewertung schreiben</a>
+									</p-->
+								</div>
+							</article>
+
+						</div>
+					</div>
+				</section>
+
+				<!-- 6 · HÄUFIGE FRAGEN -->
+				<section class="wrapper style1">
+					<div class="content">
+						<div class="ls-text hidden">
+							<h2>Häufige Fragen</h2>
+						</div>
+						<dl class="ls-specs hidden">
+							<div>
+								<dt>Wie viele Bilder bekommen wir?</dt>
+								<dd>Bei einer Ganztagesbegleitung mindestens 500 bearbeitete Aufnahmen.</dd>
+							</div>
+							<div>
+								<dt>Bekommen wir auch unbearbeitete Bilder?</dt>
+								<dd>Nein. Die Bearbeitung gehört zu unserer Arbeit dazu und entscheidet mit über den Bildlook.</dd>
+							</div>
+							<div>
+								<dt>Wie weit fahrt ihr?</dt>
+								<dd>Bis 100&nbsp;km ab Schweinfurt ohne Aufpreis. Darüber hinaus gerne, dann mit Fahrtkosten.</dd>
+							</div>
+
+						</dl>
+						<div class="ls-text" style="margin-top:2rem">
+							<p><a href="faq.html">Alle Fragen und Antworten ansehen</a></p>
+						</div>
+					</div>
+				</section>
+
+				<!-- 7 · CTA -->
+				<section class="wrapper style1">
+					<div class="content">
+						<div class="ls-lead hidden">
+							<h2>Erzählt uns von eurem Tag</h2>
+							<p>
+								Schreibt uns, was ihr vorhabt: Datum, Ort und ein paar Sätze
+								dazu, wie ihr euch den Tag vorstellt. Wir melden uns innerhalb von
+								24 Stunden bei euch.
+							</p>
+							<p/>
+						</div>
+						<div>
+							<a href="anfrage.html" class="button special fit">Anfrage senden</a>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</section>
+
+		<!-- Cookie Banner -->
+		<div class="cookiewrapper">
+			<header>
+				<i class="bx bx-cookie"></i>
+				<h5>Deine Privatsphäre ist uns wichtig</h5>
+			</header>
+
+			<div class="data">
+				<p>Unsere Website verwendet Cookies, um das Browsing-Erlebnis zu verbessern und den Datenverkehr zu analysieren. <a href="datenschutz.html">Mehr Infos...</a></p>
+			</div>
+
+			<div class="cookiebuttons">
+				<button class="cookiebutton special" id="acceptBtn">Akzeptieren</button>
+				<button class="cookiebutton secondary small" id="declineBtn">Ablehnen</button>
+			</div>
+		</div>
+
+		<!--BACK TO TOP-->
+		<a id="back-to-top" class=""></a>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="container contact">
+				<ul class="icons">
+					<li><a	href="https://www.instagram.com/mellowlight.wedding/"
+							class="icon fa-instagram"
+							target="_blank" rel="noopener"
+							><span class="label">Instagram</span></a>
+					</li>
+					<li>
+						<a href="mailto:kontakt@mellowlight.de" class="icon fa-envelope-o"
+							><span class="label">Email</span></a>
+					</li>
+					<li>
+						<a href="https://wa.me/+4915753301238" class="icon fa-whatsapp" target="_blank" rel="noopener"
+							><span class="label">Whatsapp</span></a>
+					</li>
+				</ul>
+			</div>
+			<div class="footerlinks">
+			Editorial Hochzeitsfotografen aus Schweinfurt in Unterfranken.
+			Hochzeiten in Würzburg, Bamberg, ganz Deutschland und weltweit.<br/>
+			Wirf einen Blick in unseren Blog:
+			<a href="https://blog.mellowlight.de/">blog.mellowlight.de</a>
+			<br />
+			Weiteres, wie Portraits, Newborn Fotografie und Business Shoots findest du auf
+			<a href="https://portraits.mellowlight.de/">portraits.mellowlight.de</a>
+			<br /><br />
+			<img src="images/lgbtq-plus-pride-flag.webp" alt="LGBTQ+ Flagge" loading="lazy"><span class="futura"
+				>Love is <span class="highlight">Love</span></span>
+				<br/><br/>
+
+			</div>
+			<div class="copyright">
+				Copyright Mellowlight 2026 |
+				<a href="datenschutz.html">Datenschutz</a> | <a href="impressum.html">Impressum</a> |
+				<a class="cookiesettings" aria-label="Cookie Einstellungen">🍪</a>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/cookiebanner.js"></script>
+		<script defer src="assets/js/scrollanim.js"></script>
+		<script defer src="assets/js/back-to-top.js"></script>
+		<script defer src="assets/js/navmenu.js"></script>
+	</body>
+</html>

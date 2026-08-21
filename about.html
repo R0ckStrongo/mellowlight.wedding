@@ -3,17 +3,113 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Über uns – Mellowlight Hochzeitsfotografen aus Schweinfurt in Unterfranken</title>
+		<title>Über uns – Hochzeitsfotografen aus Schweinfurt | Mellowlight</title>
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-		<meta name="description" content="Wir sind Mellowlight – ein Fotografenpaar aus Schweinfurt in Unterfranken. Entspannte Editorial Hochzeitsfotografie für Paare, die echte Momente lieben.">
-		<meta name="keywords" content="Marie-Claire und Martin, Mellowlight, Hochzeitsfotografen, Berlin, Unterfranken, Paar-Fotografie, Naturliebhaber, Reiselust, Musikenthusiasten, Vegetarier, Cappuccino-Liebhaber, Leidenschaftliche Fotografen, Kreatives Team">
-		<meta name="author" content="Mellowlight - Marie-Claire & Martin">
+		<meta name="description" content="Marie-Claire und Martin fotografieren Hochzeiten in Unterfranken – zu zweit, ruhig und vollständig. Wie wir arbeiten und was ihr von uns erwarten könnt.">
+		<meta name="author" content="Mellowlight - Marie-Claire &amp; Martin">
 		<link rel="canonical" href="https://mellowlight.de/about" />
-		<meta name="robots" content="index, follow">
+		<meta name="robots" content="index, follow, max-image-preview:large">
+
+		<meta property="og:type" content="profile">
+		<meta property="og:site_name" content="Mellowlight">
+		<meta property="og:locale" content="de_DE">
+		<meta property="og:title" content="Über uns – Hochzeitsfotografen aus Schweinfurt | Mellowlight">
+		<meta property="og:description" content="Marie-Claire und Martin fotografieren Hochzeiten in Unterfranken – zu zweit, ruhig und vollständig.">
+		<meta property="og:url" content="https://mellowlight.de/about">
 		<meta property="og:image" content="https://mellowlight.de/images/social-image.jpg">
 		<meta property="og:image:width" content="1200">
 		<meta property="og:image:height" content="630">
+
 		<link rel="stylesheet" href="assets/css/main.min.css"/>
+
+		<!--
+			Nur für diese Seite. Alles andere kommt aus main.min.css.
+			Die Farben sind exakt die der Hauptwebsite.
+		-->
+		<style>
+			.about-lead{max-width:46rem;margin:0 auto}
+			.about-lead p{font-size:1.15rem;line-height:1.7}
+
+			/* Textabschnitte: schmale Lesespalte, links ausgerichtet */
+			.about-text{max-width:44rem;margin:0 auto;text-align:left}
+			.about-text h2{margin:0 0 1.5rem}
+			.about-text p{margin:0 0 1.5rem}
+			.about-text p:last-child{margin-bottom:0}
+
+			/* Der eine Satz, der als Zäsur größer stehen darf */
+			.about-pull{font-family:"Playfair Display",Georgia,serif;font-style:italic;
+				font-size:1.5rem;line-height:1.35;color:#111;
+				border-left:2px solid #3a2230;padding-left:1.25rem;margin:2.5rem 0}
+
+			/* Verantwortung: einziger Abschnitt mit abgesetzter Fläche */
+			.about-ground{background:#f9f9f9;padding:4rem 2rem}
+
+			/* Zwei Perspektiven */
+			.about-duo{display:flex;flex-wrap:wrap;gap:3rem;max-width:52rem;margin:0 auto;text-align:left}
+			.about-duo>div{flex:1 1 20rem;min-width:0}
+			.about-duo img{width:150px;height:200px;object-fit:cover;object-position:center;
+				display:block;margin:0 0 1.25rem;background:#f9f9f9}
+			.about-duo h3{margin:0 0 .75rem;font-size:1.25rem}
+			.about-duo p{margin:0;font-size:.95rem;line-height:1.7}
+
+			/* Ablauf: Ziffern statt Kacheln */
+			.about-steps{max-width:44rem;margin:0 auto;text-align:left;list-style:none;padding:0;counter-reset:s}
+			.about-steps li{counter-increment:s;display:flex;gap:1.5rem;
+				padding:1.75rem 0;border-bottom:1px solid #e5e5e5}
+			.about-steps li:last-child{border-bottom:0}
+			.about-steps li::before{content:counter(s);font-family:futura-pt,sans-serif;
+				font-weight:300;font-size:1.75rem;line-height:1;color:#3a2230;
+				min-width:2rem;flex-shrink:0}
+			.about-steps p{margin:0;line-height:1.7}
+			.about-steps strong{display:block;margin-bottom:.35rem}
+
+			@media screen and (max-width:736px){
+				.about-ground{padding:3rem 1.25rem}
+				.about-duo{gap:2.5rem}
+				.about-duo img{width:110px;height:145px}
+				.about-pull{font-size:1.25rem}
+			}
+		</style>
+
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@graph": [
+		    {
+		      "@type": "AboutPage",
+		      "@id": "https://mellowlight.de/about#webpage",
+		      "url": "https://mellowlight.de/about",
+		      "name": "Über uns – Hochzeitsfotografen aus Schweinfurt",
+		      "inLanguage": "de-DE",
+		      "about": { "@id": "https://mellowlight.de/#organization" }
+		    },
+		    {
+		      "@type": "Person",
+		      "@id": "https://mellowlight.de/#marie-claire",
+		      "name": "Marie-Claire Götzinger",
+		      "jobTitle": "Hochzeitsfotografin",
+		      "worksFor": { "@id": "https://mellowlight.de/#organization" },
+		      "image": "https://mellowlight.de/images/about/Marie-Claire.webp",
+		      "sameAs": [
+		        "https://www.instagram.com/mellowlight.portraits/",
+		        "https://500px.com/p/marie-clairegoetzinger"
+		      ]
+		    },
+		    {
+		      "@type": "Person",
+		      "@id": "https://mellowlight.de/#martin",
+		      "name": "Martin",
+		      "jobTitle": "Hochzeitsfotograf",
+		      "worksFor": { "@id": "https://mellowlight.de/#organization" },
+		      "image": "https://mellowlight.de/images/about/Martin.webp",
+		      "sameAs": [
+		        "https://www.instagram.com/r0ck_strongo/",
+		        "https://www.youtube.com/@moatenstudios"
+		      ]
+		    }
+		  ]
+		}
+		</script>
 
 		<!--Goatcounter-->
 		<script data-goatcounter="https://mellowlight.goatcounter.com/count"
@@ -21,15 +117,14 @@
 
 	</head>
 	<body id="home">
-		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=209840151984177&ev=PageView&noscript=1"/></noscript>
 		<!-- Header -->
 		<header id="header">
 			<nav role="navigation" class="top-right open nav-mobile hidden">
 				<a href="https://mellowlight.de" class="disc l2"><div>Home</div></a>
-				<a href="about.html" class="disc l3"><div>About</div></a>
+				<a href="about.html" class="disc l3"><div>Über uns</div></a>
 				<a href="gallery.html" class="disc l4"><div>Stories</div></a>
-				<a href="index.html#angebote" class="disc l5"><div>Angebote</div></a>
-				<a href="faq.html" class="disc l6"><div>Gut zu wissen</div></a>
+				<a href="angebote.html" class="disc l5"><div>Angebote</div></a>
+				<a href="faq.html" class="disc l6"><div>FAQ</div></a>
 				<a href="anfrage.html" class="disc l7"><div>Anfragen</div></a>
 				<a class="disc l8 toggle" id="burger-toggle">
 					<svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#0f0817}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
@@ -38,107 +133,257 @@
 			<nav class="navbar hidden" id="navbar">
 				<a href="index.html" class="nav-left">MELLOW<span class="highlight">LIGHT</span></a>
 				<div class="nav-center">
-				  <a href="about.html">About Us</a>
+				  <a href="about.html">Über uns</a>
 				  <a href="gallery.html">Stories</a>
-				  <a href="index.html#angebote">Angebote</a>
-				  <a href="faq.html">Gut zu wissen</a>
+				  <a href="angebote.html">Angebote</a>
+				  <a href="faq.html">FAQ</a>
 				</div>
 				<div class="nav-right">
 				  <a href="anfrage.html" class="button special">Anfragen</a>
 				</div>
 			</nav>
-
 		</header>
 
 		<!-- Main -->
 		<section id="main">
 			<div class="inner">
+
+				<!-- 1 · HERO -->
 				<section class="wrapper style1">
 					<p><br/></p>
 					<header>
-						<h1>Lernt uns kennen</h1>
-						<p>Zwei Perspektiven. Ein Blick für eure Geschichte.</p>
+						<h1>Marie-Claire &amp; Martin &mdash; Hochzeitsfotografen aus Schweinfurt</h1>
+						<p>Ruhig in der Arbeit. Klar in der Ästhetik.</p>
 					</header>
 				</section>
+
+				<!-- 2 · WER WIR SIND -->
 				<section class="wrapper style1">
-					<div class="spotlight alt hidden">
+					<div class="spotlight hidden">
 						<div class="image flush">
 							<img srcset="images/about/Marie-Claire_Martin_Collage-800.webp 800w,
 										 images/about/Marie-Claire_Martin_Collage-1500.webp 1500w"
-								 src="images/about/Marie-Claire_Martin_Collage-800.webp" 
-								 alt="Marie-Claire und Martin von Mellowlight – Hochzeitsfotografen aus Schweinfurt" loading="lazy"/>
+								 sizes="(min-width: 737px) 50vw, 100vw"
+								 src="images/about/Marie-Claire_Martin_Collage-800.webp"
+								 alt="Bildcollage von Marie-Claire und Martin: beide mit Kamera bei der Arbeit sowie gemeinsame Portraits, darunter der handgeschriebene Namenszug"
+								 loading="eager" fetchpriority="high">
 						</div>
 						<div class="inner">
-							<p>Wir sind Marie-Claire & Martin von Mellowlight, ein Fotografenpaar für entspannte Editorial Hochzeitsfotografie aus Schweinfurt in Unterfranken.</p>
-							<h3>Warum wir zu zweit arbeiten</h3>
-							<br/>
-							Zwei Fotograf:innen bedeuten zwei Blickwinkel: Die eine Perspektive sucht Nähe und Emotion, die andere Ordnung und Kontext. Zusammen erzählen wir euren Tag vollständig — ohne inszeniert zu wirken.
-							<br/><br/>
-							<h3>Unser Anspruch</h3>
-							<br/>
-							Ruhig in der Arbeit. Klar in der Ästhetik. Immer echt in der Haltung.<br/>
-							Wir begleiten ausgewählt wenige Hochzeiten pro Jahr, damit jede Geschichte die Aufmerksamkeit erhält, die sie verdient.
-						</div>
-					</div>
-
-					<div class="spotlight hidden">
-						<div class="image flush"><img src="images/about/Marie-Claire.webp" alt="Fotografin Marie-Claire von Mellowlight" loading="lazy"/></div>
-						<div  class="inner">
-							<header>
-								<h2>Marie - Claire</h2>
-								<p>Creative Lead</p>
-							</header>
-							<br/>
-							Leitet Bildsprache, Styling-Entscheidungen und die kreative Retusche. Ihr Augenmerk liegt auf Komposition, Farbe und der feinen Formgebung, die einen Moment zu einem Bild macht.
-							<ul class="icons">
-								<li><a href="https://www.instagram.com/mellowlight.portraits/" class="icon fa-instagram" aria-label="Marie-Claire auf Instagram" target="_blank"><span class="label">Instagram</span></a></li>
-								<li><a href="https://500px.com/p/marie-clairegoetzinger" class="icon fa-500px" aria-label="Marie-Claire auf 500px" target="_blank"><span class="label">500px</span></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="spotlight alt hidden">
-						<div class="image flush"><img src="images/about/Martin.webp" alt="Fotograf Martin von Mellowlight" loading="lazy"/></div>
-						<div class="inner">
-							<header>
-								<h2>Martin</h2>
-								<p>Motion & Direction</p>
-							</header>
-							<br/>
-							Verbindet Film, Bewegung und Timing zu einem natürlichen Rhythmus.<br/>
-							Mit Gespür für Menschenführung und Ablauf sorgt er dafür, dass sich der Tag mühelos entfaltet – und aus Momenten visuelle Sequenzen entstehen, die bleiben.
-
-							<ul class="icons">
-								<li><a href="https://www.instagram.com/r0ck_strongo/" class="icon fa-instagram" aria-label="Martin auf Instagram" target="_blank"><span class="label">Instagram</span></a></li>
-								<li><a href="https://www.youtube.com/@moatenstudios" class="icon fa-youtube" aria-label="Martin auf Youtube" target="_blank"><span class="label">Youtube</span></a></li>
-							</ul>
-						</div>
-					</div>
-					
-					
-							<!--p>
-								Hallo, wir sind Marie-Claire und Martin – nicht nur leidenschaftliche Fotografen, sondern auch ein echtes Lebens- und Liebespaar. Seit über 10 Jahren teilen wir nicht nur den Alltag, sondern auch unsere Liebe für die kleinen Dinge, die das Leben so besonders machen.<br/><br/>
-								Unsere Wurzeln liegen in der zauberhaften Kulisse von Unterfranken – zwischen Weinbergen, Streuobstwiesen und historischen Städtchen. Nach unserer Studienzeit im malerischen Ulm zog es uns in die Großstadt – mehrere Jahre lebten und arbeiteten wir im kreativen Trubel von Berlin-Moabit.<br/>
-								Seit letztem Jahr sind wir zurück in der Heimat und haben unser neues Zuhause in Schweinfurt gefunden. Hier in der Region sind wir jetzt als Fotografen tätig – mit viel Herz, einem geschärften Blick für Details und der Liebe zur fränkischen Landschaft und ihren Menschen.<br/>
-								Ob beim Wandern durch die Rhön, beim Streifzug durch kleine Dörfer oder bei spontanen Roadtrips – unsere Kameras sind immer mit dabei. Wir lieben es, neue Orte zu entdecken, besondere Momente einzufangen und Menschen authentisch zu porträtieren.<br/>
-								Musik begleitet uns dabei auf Schritt und Tritt. Ihr findet uns häufig auf Konzerten – von Klassik bis Metal, von sanften Melodien bis zu harten Riffs, wir lieben die Vielfalt. Nur Ballermann-Schlager lassen wir lieber links liegen.<br/>
-								Wenn unser Tag dann noch mit einem selbstgemachten Cappuccino aus unserer geliebten Siebträgermaschine beginnt, sind wir voller Energie für neue kreative Projekte – vielleicht ja bald mit euch?
-							</!--p-->
-					
-					<p/>
-					<div class="content">
-						<p>Wir freuen uns darauf Euch kennenzulernen.</p>
-						<div>
-							<a href="anfrage.html" class="button alt fit">Lasst uns reden</a>
+							<h2>Wer wir sind</h2>
+							<p>
+								Aufgewachsen sind wir beide in Unterfranken und haben nach dem Abitur Medieninformatik in Ulm studiert. 
+								Dort haben wir uns kennengelernt und sind anschließend gemeinsam nach Berlin gezogen.
+							</p>
+							<p>
+								In den acht Jahren, die wir in Berlin gelebt haben, haben wir gemeinsam zu fotografieren begonnen und viel Zeit auf Konzerten, 
+								Ausstellungen und anderen kulturellen Veranstaltungen verbracht.
+								Inzwischen sind wir zurück in Unterfranken und leben in Schweinfurt.
+								Für Hochzeiten sind wir nach wie vor gerne überregional unterwegs, die meisten begleiten wir aber hier in der Region – 
+								zwischen Würzburg, den Haßbergen und der Rhön.
+							</p>
+							<p>
+								Wenn wir nicht fotografieren, sind wir meistens unterwegs: auf Wanderungen
+								hier in Franken, gelegentlich weiter weg in Japan oder Skandinavien. Und
+								ziemlich oft auf Konzerten. Von Klassik bis Metal ist alles dabei, nur
+								Ballermann-Schlager lassen wir zuverlässig aus.
+							</p>
 						</div>
 					</div>
 				</section>
+
+				<!-- 3 · WARUM WIR ZUSAMMEN FOTOGRAFIEREN -->
 				<section class="wrapper style1">
-					<div>
-						<a href="index.html" class="button special fit">Zurück zur Startseite</a>
+					<div class="content">
+						<div class="about-text hidden">
+							<h2>Warum wir zusammen fotografieren</h2>
+							<p>
+								Hochzeiten waren nicht der Plan. Der Auslöser war die Hochzeit von Bekannten, die wir gemeinsam fotografiert haben. 
+								Dabei sind uns zwei Dinge aufgefallen.
+							</p>
+							<p>
+								Erstens: Kaum ein anderer Anlass verlangt an einem einzigen Tag so viele verschiedene Arten der Fotografie. 
+								Ringe im Makrobereich, Porträts, eine dokumentarische Trauung, Architektur in einem dunklen Trauzimmer, Gruppen im Gegenlicht, 
+								abends Blitz auf der Tanzfläche – und dazwischen Details, die niemand zweimal zeigt. 
+								Die Situationen wechseln ständig, und die Technik muss jedes Mal mitwechseln.
+							</p>
+							<p>
+								Zweitens: Wir funktionieren dabei als Team. Nicht, weil wir alles vorher absprechen, 
+								sondern weil wir uns über viele Jahre daran gewöhnt haben, wie der andere denkt. 
+								Einer von uns sieht, wo der nächste Moment entsteht, der oder die andere ist schon dort. 
+								Wir müssen uns dafür kaum verständigen und geraten dabei nicht aus der Ruhe.
+							</p>
+							<p class="about-pull">
+								Nichts davon lässt sich wiederholen. Das ist der eigentliche Anspruch.
+							</p>
+							<p>
+								Seit 2018 machen wir das. Nicht nur, weil wir Hochzeiten schön finden (das natürlich auch), 
+								sondern weil sie fotografisch zu den anspruchsvollsten Situationen gehören, die wir kennen.
+							</p>
+						</div>
 					</div>
 				</section>
+
+				<!-- 4 · WAS ZWEI FOTOGRAF:INNEN MÖGLICH MACHEN -->
+				<section class="wrapper style1">
+					<div class="content">
+						<div class="about-text hidden">
+							<h2>Was zwei Fotograf:innen möglich machen</h2>
+							<p>
+								Zwei Kameras bedeuten nicht doppelt so viele Bilder. 
+								Sie bedeuten Bilder, die es sonst nicht gäbe.
+							</p>
+							<p>
+								Beim First Look steht einer von uns bei der Person, die wartet, während der andere die Person begleitet, die kommt. 
+								Beide Reaktionen passieren im selben Sekundenbruchteil und nur einmal. Mit einer Kamera müsste man sich für eine davon entscheiden.
+							</p>
+							<p>
+								Beim Getting Ready können wir an zwei Orten gleichzeitig sein. 
+								Während der Trauung hält einer von uns euch bei der Zeremonie fest, der andere den Raum und die Gäste. 
+								Während einer das Paar begleitet, sieht der andere, was daneben passiert: die Mutter, die kurz die Fassung verliert, der Trauzeuge, der seinen Zettel noch einmal liest.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- 5 · ZWEI PERSPEKTIVEN -->
+				<section class="wrapper style1">
+					<div class="content">
+						<div class="about-text hidden" style="margin-bottom:2.5rem">
+							<h2>Zwei Perspektiven</h2>
+							<p>
+								Wir machen beide alles, und die Aufteilung ändert sich mit der Situation. Es
+								gibt aber Dinge, die dem einen leichter fallen als dem anderen.
+							</p>
+						</div>
+						<div class="about-duo hidden">
+							<div>
+								<img src="images/about/Martin.webp"
+									 alt="Martin fotografiert mit einer Canon EOS R6 Mark II"
+									 loading="lazy" width="1000" height="1000">
+								<h3>Martin</h3>
+								<p>
+									Kümmert sich um die Technik: welches Objektiv gerade gebraucht wird, 
+									wo der Blitz stehen muss, damit der Tortenanschnitt nicht im Dunkeln versinkt, 
+									und wie der First Dance am besten ausgeleuchtet wird. Er übernimmt außerdem die Ansagen,
+									wenn dreißig Menschen sortiert werden müssen und sorgt dafür, dass es sich trotzdem nicht nach Ansage anfühlt.
+								</p>
+								<ul class="icons">
+									<li><a href="https://www.instagram.com/r0ck_strongo/" class="icon fa-instagram" aria-label="Martin auf Instagram" target="_blank" rel="noopener"><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.youtube.com/@moatenstudios" class="icon fa-youtube" aria-label="Martin auf YouTube" target="_blank" rel="noopener"><span class="label">Youtube</span></a></li>
+								</ul>
+							</div>
+							<div>
+								<img src="images/about/Marie-Claire.webp"
+									 alt="Marie-Claire fotografiert mit der Kamera vor dem Gesicht während einer Hochzeit"
+									 loading="lazy" width="1000" height="1000">
+								<h3>Marie-Claire</h3>
+								<p>
+									Sieht die Dinge zwischen den Programmpunkten: die Reaktion in der zweiten Reihe, 
+									die Hand auf dem Rücken, das Detail auf dem Tisch, an dem jemand lange gearbeitet hat. 
+									Sie übernimmt später auch Auswahl und Bearbeitung, den Teil der Arbeit, der Wochen nach der Hochzeit stattfindet und am Ende über die Bildsprache entscheidet.
+								</p>
+								<ul class="icons">
+									<li><a href="https://www.instagram.com/mellowlight.portraits/" class="icon fa-instagram" aria-label="Marie-Claire auf Instagram" target="_blank" rel="noopener"><span class="label">Instagram</span></a></li>
+									<li><a href="https://500px.com/p/marie-clairegoetzinger" class="icon fa-500px" aria-label="Marie-Claire auf 500px" target="_blank" rel="noopener"><span class="label">500px</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- 6 · VERANTWORTUNG -->
+				<section class="wrapper style1">
+					<div class="about-ground">
+						<div class="about-text hidden">
+							<h2>Verantwortung für Erinnerungen</h2>
+							<p>
+								Eine Hochzeit zu fotografieren heißt für uns, Verantwortung 
+								für Erinnerungen zu übernehmen, die es nur einmal gibt.
+							</p>
+							<p>
+								Das klingt groß, ist aber vor allem eine Frage der Vorbereitung. 
+								Vor jeder Hochzeit sprechen wir persönlich mit euch über den Ablauf. 
+								Es gibt einen Vertrag, der beide Seiten absichert, damit von Anfang an klar ist, worauf ihr euch verlassen könnt.
+							</p>
+							<p>
+								Am Hochzeitstag zeichnet jede unserer Kameras gleichzeitig auf zwei Speicherkarten auf. 
+								Sollte eine ausfallen, sind die Bilder trotzdem noch da. Noch am selben Abend sichern wir alles mehrfach.
+							</p>
+							<p>
+								Danach beginnt der Teil, den man nicht sieht: Wir gehen jedes Bild einzeln durch, 
+								wählen von Hand aus und bearbeiten die Bilder, statt einfach einen Filter über 
+								den ganzen Tag zu legen. Auch nach der Übergabe gehen wir sorgfältig mit euren Bildern um.
+							</p>
+							<p>
+								Und dann gibt es den Fall, dass etwas anders läuft als geplant, was auf Hochzeiten regelmäßig vorkommt. 
+								Der Zeitplan kippt, das Wetter schlägt um, jemand kommt zu spät. Wir machen daraus keine Krise. 
+								Wir sagen euch, was noch möglich ist, schlagen etwas vor und lösen es gemeinsam. Ruhig zu bleiben, 
+								wenn ein Plan nicht mehr funktioniert, ist ein größerer Teil dieses Berufs, als man denkt.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- 7 · HALTUNG -->
+				<section class="wrapper style1">
+					<div class="content">
+						<div class="about-text hidden">
+							<h2>Was für eine Hochzeit ihr feiert, ist eure Entscheidung</h2>
+							<p>
+								Wir haben keinen Hochzeitstyp, den wir bevorzugen. 
+								Standesamt ganz intim mit vier Gästen, 120 Menschen ausgelassen in einer Scheune, opulente Hochzeit auf einem Schloss, 
+								naturnah im Wald oder abenteuerlich im Heißluftballon, <a href="https://blog.mellowlight.de/was-ist-ein-elopement/">Elopement</a> 
+								in Norwegen oder eine Trauung auf einer Berghütte.
+								Uns interessiert nicht die Kategorie, sondern ob der Tag zu euch passt.
+							</p>
+							<p>
+								Wenn ihr wollt, denken wir bei der Planung mit und bringen Ideen ein, die euch vielleicht noch nicht begegnet sind. 
+								Was wir nicht tun: eure Hochzeit in unseren Stil biegen. Wir waren schon auf Hochzeiten, 
+								die wir selbst nie so gefeiert hätten und die trotzdem großartig waren, 
+								weil sie genau zu den Menschen gepasst haben, die sie gefeiert haben.
+							</p>
+							<p>
+								Der Tag gehört euch. Wir sind die, die ihn festhalten.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- 8 · ABLAUF -->
+				<section class="wrapper style1">
+					<div class="content">
+						<div class="about-text hidden" style="margin-bottom:1rem">
+							<h2>Wie eine Zusammenarbeit abläuft</h2>
+							<p>
+								Von eurer ersten Anfrage bis zu euren fertigen Bildern begleiten wir euch Schritt für Schritt. In unserem ausführlichen Ablauf zeigen wir euch, was euch auf dem Weg erwartet.
+							</p>
+							<a href="/angebote.html#ablauf" class="button fit">Den Ablauf ansehen</a>
+						</div>
+					</div>
+				</section>
+
+				<!-- 9 · CTA -->
+				<section class="wrapper style1">
+					<div class="content">
+						<div class="about-lead hidden">
+							<h2>Lernt uns kennen</h2>
+							<p>
+								Wenn ihr bis hierher gelesen habt, ist der nächste Schritt vermutlich der
+								einfachste: Schreibt uns, was ihr vorhabt. Wir melden uns mit ehrlichen
+								Gedanken dazu, auch dann, wenn wir für euren Tag nicht die Richtigen
+								sind.
+							</p>
+							<p/>
+						</div>
+						<div>
+							<a href="anfrage.html" class="button special fit">Erzählt uns eure Geschichte</a>
+						</div>
+					</div>
+				</section>
+
 			</div>
 		</section>
+
 		<!-- Cookie Banner -->
 		<div class="cookiewrapper">
 			<header>
@@ -160,21 +405,21 @@
 		<a id="back-to-top" class=""></a>
 
 		<!-- Footer -->
-				<footer id="footer">
+		<footer id="footer">
 			<div class="container contact">
 				<ul class="icons">
 					<li><a	href="https://www.instagram.com/mellowlight.wedding/"
 							class="icon fa-instagram"
-							target="_blank"
+							target="_blank" rel="noopener"
 							><span class="label">Instagram</span></a>
 					</li>
 					<li>
 						<a href="mailto:kontakt@mellowlight.de" class="icon fa-envelope-o"
-							><span class="label" target="_blank">Email</span></a>
+							><span class="label">Email</span></a>
 					</li>
 					<li>
-						<a href="https://wa.me/+4915753301238" class="icon fa-whatsapp"
-							><span class="label" target="_blank">Whatsapp</span></a>
+						<a href="https://wa.me/+4915753301238" class="icon fa-whatsapp" target="_blank" rel="noopener"
+							><span class="label">Whatsapp</span></a>
 					</li>
 				</ul>
 			</div>
@@ -187,10 +432,10 @@
 			Weiteres, wie Portraits, Newborn Fotografie und Business Shoots findest du auf
 			<a href="https://portraits.mellowlight.de/">portraits.mellowlight.de</a>
 			<br /><br />
-			<img src="images/lgbtq-plus-pride-flag.webp" alt="LGBTQ+ Flagge" loading="lazy" /><span class="futura"
+			<img src="images/lgbtq-plus-pride-flag.webp" alt="LGBTQ+ Flagge" loading="lazy"  width="35" height="35"><span class="futura"
 				>Love is <span class="highlight">Love</span></span>
 				<br/><br/>
-				
+
 			</div>
 			<div class="copyright">
 				Copyright Mellowlight 2026 |
