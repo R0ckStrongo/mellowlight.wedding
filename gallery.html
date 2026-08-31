@@ -18,7 +18,7 @@
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
 		<link rel="stylesheet" href="assets/css/main.min.css" />
-
+		<link rel="stylesheet" href="assets/css/mellowlight.css"/>
 		<!--Goatcounter-->
 		<script data-goatcounter="https://mellowlight.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 	</head>
@@ -26,22 +26,17 @@
 		<!-- Header -->
 		<header id="header">
 			<nav role="navigation" class="top-right open nav-mobile hidden">
-				<a href="https://mellowlight.de" class="disc l2"><div>Home</div></a>
-				<a href="about.html" class="disc l3"><div>Über uns</div></a>
-				<a href="gallery.html" class="disc l4"><div>Hochzeiten</div></a>
-				<a href="angebote.html" class="disc l5"><div>Angebote</div></a>
-				<a href="faq.html" class="disc l6"><div>FAQ</div></a>
-				<a href="anfrage.html" class="disc l7"><div>Anfragen</div></a>
+				<a href="anfrage.html" class="disc l2"><div>Anfragen</div></a>
+				<a href="faq.html" class="disc l3"><div>FAQ</div></a>
+				<a href="angebote.html" class="disc l4"><div>Angebote</div></a>
+				<a href="gallery.html" class="disc l5"><div>Hochzeiten</div></a>
+				<a href="about.html" class="disc l6"><div>Über uns</div></a>
+				<a href="index.html" class="disc l7"><div>Home</div></a>
 				<a class="disc l8 toggle" id="burger-toggle">
 					<svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
 						<!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-						<style>
-							svg {
-								fill: #0f0817;
-							}
-						</style>
-						<path
-							d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+						<style>svg {fill: #0f0817;}</style>
+						<path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
 					</svg>
 				</a>
 			</nav>
@@ -51,17 +46,13 @@
 					<a href="about.html">Über uns</a>
 					<a href="gallery.html">Hochzeiten</a>
 					<a href="angebote.html">Angebote</a>
+					<!--a href="https://blog.mellowlight.de/" target="_blank" rel="noopener">Journal</a-->
 					<a href="faq.html">FAQ</a>
 				</div>
 				<div class="nav-right">
 					<a href="anfrage.html" class="button special">Anfragen</a>
 				</div>
 			</nav>
-
-			<div class="claim">
-				<h1>Galerie</h1>
-				<a href="index.html" class="button">Back Home</a>
-			</div>
 		</header>
 
 		<!-- Main -->
@@ -70,11 +61,25 @@
 				<section class="wrapper style1">
 					<p><br /></p>
 					<header>
-						<h2>Ausgewählte Momente</h2>
-						<p>Jeder Augenblick erzählt eine Geschichte.</p>
+						<h1>Hochzeiten in Bildern</h1>
+						<p>Von einzelnen Momenten bis zu vollständigen Reportagen.</p>
 					</header>
 				</section>
-				<section class="wrapper style2" id="firstsection">
+	
+					
+				<section class="hp__reportagen">
+					<p class="hp__eyebrow">Echte Hochzeiten</p>
+					<h2>Der ganze Tag, nicht nur die Highlights</h2>
+
+					<div class="hp__reportagen-grid" id="reportagen-feed"></div>
+				</section>
+					
+
+					
+				<section class="hp__block hp__weit">
+					<p class="hp__eyebrow">Ausgewählte Momente</p>
+					<h2>Bilder, die für sich stehen</h2>
+					
 					<div id="gallery">
 						<div class="inner">
 							<div class="columns">
@@ -88,7 +93,7 @@
 											"
 											alt="Anschnitt Hochzeitstorte in schwarz-weiss"
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/braeutigam-finger-pistols.webp">
@@ -100,7 +105,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/braeutigam-haelt-braut.webp">
@@ -112,7 +117,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/makro-eheringe-im-feuer.webp">
@@ -124,7 +129,7 @@
 											"
 											alt="Makroaufnahme von Eheringen im Feuer"
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/braeutigam-jubelt-hosentraeger.webp">
@@ -136,7 +141,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/hochzeitstorte-finca-mallorca.webp">
@@ -148,7 +153,7 @@
 											"
 											alt="Hochzeitstorte bei Finca auf Mallorca"
 											loading="lazy"
-									/></a>
+									 width="534" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/braeutigam-kuss-haelt-bein-der-braut.webp">
@@ -160,7 +165,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								
 								<div class="image fit hidden">
@@ -173,7 +178,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/braut-mit-langen-haaren-brautstrauss.webp">
@@ -185,7 +190,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/brautstrauss-eukalyptus.webp">
@@ -197,7 +202,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/groomsmen-sitzen-im-freien-unter-lichtern.webp">
@@ -209,7 +214,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/nahaufnahme-eheringe-auf-brautstrauss.webp">
@@ -221,7 +226,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="534" height="800"></a>
 								</div>
 								
 								<div class="image fit hidden">
@@ -234,7 +239,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/braut-in-natur-mallorca.webp">
@@ -246,7 +251,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/braut-lacht-in-kamera.webp">
@@ -258,7 +263,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a
@@ -271,7 +276,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/braut-mit-strauss-und-seifenblasen.webp">
@@ -283,7 +288,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/braut-mit-strauss-von-oben.webp">
@@ -295,7 +300,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/braut-schaut-in-kamera-nahaufnahme.webp">
@@ -307,7 +312,7 @@
 											"
 											alt="Braut schaut in die Kamera, Featured im Braut & Bräutigam Magazin"
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/braut-schleier-tischdeko.webp">
@@ -319,7 +324,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/braut-vor-kloster-riddagshausen.webp">
@@ -331,7 +336,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/brautpaar-berlin-bvg-bus.webp">
@@ -343,7 +348,7 @@
 											"
 											alt="Brautpaar steigt in BVG Bus"
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/brautpaar-brautstrauss-berliner-park.webp">
@@ -355,7 +360,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/brautpaar-feiert-im-auto.webp">
@@ -367,7 +372,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/brautpaar-geht-in-sonne-spazieren-sw.webp">
@@ -379,7 +384,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/brautpaar-im-regen-braunschweig.webp">
@@ -391,7 +396,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/brautpaar-lacht-am-tisch-sw.webp">
@@ -403,7 +408,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/brautpaar-stirn-an-stirn.webp">
@@ -415,7 +420,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/brautpaar-stoesst-mit-aperol-am-tisch-an.webp">
@@ -427,7 +432,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/brautpaar-geht-mit-sonnenschirm-spazieren.webp">
@@ -439,7 +444,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/brautpaar-symmetrisch-vor-efeu-fassade.webp">
@@ -451,7 +456,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								
 								<div class="image fit hidden">
@@ -464,11 +469,11 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/braut-tanzt.webp">
-										<img src="images/braut-tanzt.webp" alt="" loading="lazy" />
+										<img src="images/braut-tanzt.webp" alt="" loading="lazy"  width="605" height="1000">
 									</a>
 								</div>
 								<div class="image fit hidden">
@@ -481,7 +486,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/dip-kiss-braut-mit-schleier.webp">
@@ -493,7 +498,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="536" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/ehepaar-im-gegenlicht-burg-arnstein.webp">
@@ -505,7 +510,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/eheringe-auf-buntem-brautstrauss.webp">
@@ -517,7 +522,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/eheringe-auf-sommerlichen-blumen.webp">
@@ -529,7 +534,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/eheringe-mit-orangenen-blumen.webp">
@@ -541,7 +546,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/epic-best-men-mit-braeutigam.webp">
@@ -553,7 +558,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/flatlay-einladungen-bunt.webp">
@@ -565,7 +570,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/flatlay-einladungen-schwarz.webp">
@@ -577,7 +582,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/florale-tischdeko.webp">
@@ -589,7 +594,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/hochzeitsmusiker-spielt-bei-trauung.webp">
@@ -601,7 +606,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/hochzeitstorte-drip.webp">
@@ -613,7 +618,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/inniger-kuss-vor-funken.webp">
@@ -625,7 +630,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/intimer-moment-braut-oma.webp">
@@ -637,7 +642,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/kuss-mit-brautschleier.webp">
@@ -649,7 +654,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/magenta-brautstrauss.webp">
@@ -661,7 +666,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/nahaufnahme-braut-mallorca.webp">
@@ -673,7 +678,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="534" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/nahaufnahme-ringe-an-haenden.webp">
@@ -685,7 +690,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a
@@ -698,7 +703,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/paar-auf-mauer-schaut-sich-an.webp">
@@ -710,7 +715,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/paar-auf-mauer-vor-blauem-himmel.webp">
@@ -722,7 +727,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/paar-freut-sich-brandmuehle-massbach.webp">
@@ -734,7 +739,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/paar-hinter-aperol-tower.webp">
@@ -746,7 +751,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/paar-im-regen-braunschweig-kirche-sw.webp">
@@ -758,7 +763,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/paar-kommt-aus-rathaus-braunschweig.webp">
@@ -770,7 +775,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/paar-kommt-aus-standesamt-massbach-sw.webp">
@@ -782,7 +787,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/paar-kuss-brandmuehle-massbach.webp">
@@ -794,7 +799,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/paar-museumsinsel-berlin.webp">
@@ -806,7 +811,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/paarfoto-vor-scheunentor-massbach.webp">
@@ -818,7 +823,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/rothaarige-braut-im-licht.webp">
@@ -830,7 +835,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/schlosshotel-bad-neustadt-interior.webp">
@@ -842,7 +847,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/schwarze-hochzeitstorte.webp">
@@ -854,7 +859,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/sinnliches-brautpaar-stirn-an-stirn.webp">
@@ -866,7 +871,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/sommerlicher-bunter-brautstrauss.webp">
@@ -878,7 +883,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/stilvolle-braut-mit-licht-schatten-art.webp">
@@ -890,7 +895,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/Styled-Shoot-August-442.webp">
@@ -914,7 +919,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/tisch-deko-schwarz-viele-kerzen.webp">
@@ -926,7 +931,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/traurede-burg-arnstein.webp">
@@ -938,7 +943,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/traurednerin-und-paar-bei-hochzeit.webp">
@@ -950,7 +955,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a
@@ -963,7 +968,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/whiskey-trinken-braeutigam-best-man.webp">
@@ -975,7 +980,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 								<div class="image fit hidden">
 									<a media="images/weddings/webp-2000/willkommen-schild-glas-deko.webp">
@@ -987,7 +992,7 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="533" height="800"></a>
 								</div>
 								<div class="image fit hidden">
 									<a
@@ -1000,27 +1005,24 @@
 											"
 											alt=""
 											loading="lazy"
-									/></a>
+									 width="800" height="533"></a>
 								</div>
 
 								<div class="image fit hidden">
 									<a media="images/love-squat.webp">
-										<img src="images/love-squat.webp" alt="" loading="lazy" />
+										<img src="images/love-squat.webp" alt="" loading="lazy"  width="928" height="600">
 									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-				</section>
-
-				<section class="wrapper style1">
 					<div>
 						<a href="index.html" class="button special fit">Zurück zur Startseite</a>
 					</div>
 				</section>
 			</div>
 		</section>
-		<!-- Cookie Banner -->
+		<!-- Cookie Banner
 		<div class="cookiewrapper">
 			<header>
 				<i class="bx bx-cookie"></i>
@@ -1039,54 +1041,74 @@
 				<button class="cookiebutton secondary small" id="declineBtn">Ablehnen</button>
 			</div>
 		</div>
-
+		-->
 		<!--BACK TO TOP-->
 		<a id="back-to-top" class=""></a>
 
 		<!-- Footer -->
-		<footer id="footer">
-			<div class="container contact">
-				<ul class="icons">
-					<li>
-						<a
-							href="https://www.instagram.com/mellowlight.wedding/"
-							class="icon fa-instagram"
-							target="_blank"
-							><span class="label">Instagram</span></a
-						>
-					</li>
-					<li>
-						<a href="mailto:kontakt@mellowlight.de" class="icon fa-envelope-o"
-							><span class="label" target="_blank">Email</span></a
-						>
-					</li>
-					<li>
-						<a href="https://wa.me/+4915753301238" class="icon fa-whatsapp"
-							><span class="label" target="_blank">Whatsapp</span></a
-						>
-					</li>
-				</ul>
-			</div>
-			<div class="footerlinks">
-				Editorial Hochzeitsfotografen aus Schweinfurt in Unterfranken. Hochzeiten in Würzburg, Bamberg, ganz
-				Deutschland und weltweit.<br />
-				Wirf einen Blick in unseren Blog:
-				<a href="https://blog.mellowlight.de/">blog.mellowlight.de</a>
-				<br />
-				Weiteres, wie Portraits, Newborn Fotografie und Business Shoots findest du auf
-				<a href="https://portraits.mellowlight.de/">portraits.mellowlight.de</a>
-				<br /><br />
-				<img src="images/lgbtq-plus-pride-flag.webp" alt="LGBTQ+ Flagge" loading="lazy" /><span class="futura"
-					>Love is <span class="highlight">Love</span></span
-				>
-				<br /><br />
-			</div>
-			<div class="copyright">
-				Copyright Mellowlight 2026 |
-				<a href="datenschutz.html">Datenschutz</a> | <a href="impressum.html">Impressum</a> |
-				<a class="cookiesettings" aria-label="Cookie Einstellungen">🍪</a>
-			</div>
-		</footer>
+		<footer id="footer" class="site-footer">
+					<div class="site-footer__inner">
+
+						<div class="site-footer__brand">
+							<p class="site-footer__wordmark">MELLOW<span>LIGHT</span></p>
+							<p class="site-footer__line">
+								Hochzeitsreportagen in Franken und überall dort, wo ihr feiert.
+							</p>
+							<a href="anfrage.html" class="button special">Erz&auml;hlt uns von eurem Tag</a>
+
+							<div class="site-footer__brandrow">
+								<p class="site-footer__pride">
+									<img src="images/lgbtq-plus-pride-flag.webp" alt="Regenbogenflagge"
+										 width="35" height="35" loading="lazy">
+									<span class="futura">Love is <span class="highlight">Love</span></span>
+								</p>
+	
+								<ul class="site-footer__social">
+									<li><a href="https://www.instagram.com/mellowlight.wedding/" class="icon fa-instagram"
+										   target="_blank" rel="noopener" aria-label="Instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="mailto:kontakt@mellowlight.de" class="icon fa-envelope-o"
+										   aria-label="E-Mail"><span class="label">Email</span></a></li>
+									<li><a href="https://wa.me/+4915753301238" class="icon fa-whatsapp"
+										   target="_blank" rel="noopener" aria-label="WhatsApp"><span class="label">Whatsapp</span></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<nav class="site-footer__nav" aria-label="Mellowlight">
+							<h2 class="site-footer__heading">Mellowlight</h2>
+							<ul>
+								<li><a href="index.html">Startseite</a></li>
+								<li><a href="gallery.html">Hochzeiten</a></li>
+								<li><a href="angebote.html">Angebote</a></li>
+								<li><a href="about.html">&Uuml;ber uns</a></li>
+								<li><a href="faq.html">Gut zu wissen</a></li>
+								<li><a href="anfrage.html">Anfragen</a></li>
+							</ul>
+						</nav>
+
+						<nav class="site-footer__nav" aria-label="Mehr von uns">
+							<h2 class="site-footer__heading">Mehr von uns</h2>
+							<ul>
+								<li><a href="https://blog.mellowlight.de/" target="_blank" rel="noopener">Journal</a></li>
+								<li><a href="https://portraits.mellowlight.de/" target="_blank" rel="noopener">Portraits</a></li>
+							</ul>
+						</nav>
+
+						<nav class="site-footer__nav" aria-label="Rechtliches">
+							<h2 class="site-footer__heading">Rechtliches</h2>
+							<ul>
+								<li><a href="impressum.html">Impressum</a></li>
+								<li><a href="datenschutz.html">Datenschutz</a></li>
+								<li><a class="cookiesettings" href="#" aria-label="Cookie-Einstellungen">Cookies</a></li>
+							</ul>
+						</nav>
+
+					</div>
+
+					<p class="site-footer__legal">
+						&copy; 2026 Mellowlight &mdash; Marie-Claire &amp; Martin
+					</p>
+				</footer>
 
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
@@ -1099,5 +1121,7 @@
 		<script defer src="assets/js/simple-lightbox.js"></script>
 		<script defer src="assets/js/back-to-top.js"></script>
 		<script defer src="assets/js/navmenu.js"></script>
+		<script defer src="assets/js/reportage.feed.js"></script>
+		
 	</body>
 </html>

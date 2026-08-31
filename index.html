@@ -6,7 +6,7 @@
 		<title>Hochzeitsfotograf Schweinfurt & Unterfranken – Editorial Hochzeitsfotografie | Mellowlight</title>
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
 		<meta name="description" 
-			  content="Hochzeitsfotograf Schweinfurt & Unterfranken. Entspannte Editorial Hochzeitsfotografie und Film in Würzburg, Bamberg und weltweit." />
+			  content="Hochzeitsfotograf Schweinfurt & Unterfranken. Entspannte Editorial Hochzeitsreportagen in Würzburg, Bamberg und überall dort, wo ihr feiert." />
 		<meta
 			name="keywords"
 			content="Hochzeitsfotografie, Alternative Hochzeiten, Elopement Fotograf, Kreative Hochzeitsbilder, Entspannte Hochzeitsmomente, Mellowlight Fotografen, Hochzeitsfotograf Berlin, Hochzeitsfotograf Unterfranken, Hochzeitsfotograf Main-Spessart" />
@@ -31,7 +31,7 @@
       "@id": "https://mellowlight.de/#organization",
       "name": "Mellowlight",
       "legalName": "Mellowlight Photography c/o Götzinger Photodesign",
-      "description": "Hochzeitsfotografen aus Schweinfurt. Ganztagesreportagen und Standesamtbegleitung in Foto und Film in Unterfranken.",
+      "description": "Hochzeitsfotografen aus Schweinfurt. Ganztagesreportagen und Standesamtbegleitung in Franken und überregional.",
       "url": "https://mellowlight.de",
       "logo": "https://mellowlight.de/images/social-image.jpg",
       "image": "https://mellowlight.de/images/social-image.jpg",
@@ -147,7 +147,8 @@
   ]
 }
 		</script>
-		<link rel="stylesheet" href="assets/css/main.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/mellowlight.css"/>
 		<script src="assets/js/loading.js" defer></script>
 		<!--Goatcounter-->
 		<script data-goatcounter="https://mellowlight.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -155,29 +156,24 @@
 	<body id="home">
 		<div id="loading_screen">
 			<p class="brand">MELLOW<span class="highlight">LIGHT</span></p>
-            <p class="subtitle">Hochzeitsreportagen in Foto & Film</p>
+            <p class="subtitle">Hochzeitsreportagen aus Franken</p>
 			<div id="loading_indicator"></div>
 		</div>
 
 		<!-- Header -->
 		<header class="zoom-me" id="header">
 			<nav role="navigation" class="top-right open nav-mobile hidden">
-				<a href="index.html" class="disc l2"><div>Home</div></a>
-				<a href="about.html" class="disc l3"><div>Über uns</div></a>
-				<a href="gallery.html" class="disc l4"><div>Hochzeiten</div></a>
-				<a href="angebote.html" class="disc l5"><div>Angebote</div></a>
-				<a href="faq.html" class="disc l6"><div>FAQ</div></a>
-				<a href="anfrage.html" class="disc l7"><div>Anfragen</div></a>
+				<a href="anfrage.html" class="disc l2"><div>Anfragen</div></a>
+				<a href="faq.html" class="disc l3"><div>FAQ</div></a>
+				<a href="angebote.html" class="disc l4"><div>Angebote</div></a>
+				<a href="gallery.html" class="disc l5"><div>Hochzeiten</div></a>
+				<a href="about.html" class="disc l6"><div>Über uns</div></a>
+				<a href="index.html" class="disc l7"><div>Home</div></a>
 				<a class="disc l8 toggle" id="burger-toggle">
 					<svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
 						<!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-						<style>
-							svg {
-								fill: #0f0817;
-							}
-						</style>
-						<path
-							d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+						<style>svg {fill: #0f0817;}</style>
+						<path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
 					</svg>
 				</a>
 			</nav>
@@ -187,6 +183,7 @@
 					<a href="about.html">Über uns</a>
 					<a href="gallery.html">Hochzeiten</a>
 					<a href="angebote.html">Angebote</a>
+					<!--a href="https://blog.mellowlight.de/" target="_blank" rel="noopener">Journal</a-->
 					<a href="faq.html">FAQ</a>
 				</div>
 				<div class="nav-right">
@@ -217,308 +214,119 @@
 				<a href="anfrage.html" class="button">Erzählt uns eure Geschichte</a>
 			</div>
 		</header>
-		<!-- Main -->
-		<section id="main">
-			<div class="inner">
-				<!--ABOUT US -->
-				<section class="wrapper style1">
-					<header id="wir">
-						<h2>Unsere Perspektive</h2>
-						<p>Ruhig in der Arbeit. Klar in der Ästhetik.</p>
-					</header>
-					<div class="spotlight hidden">
-						<a href="about.html">
-							<div class="image">
-								<img id="about-image"
-									srcset="images/about/About-us-Martin-Marie-Claire-Mellowlight-400.webp 400w,
-									images/about/About-us-Martin-Marie-Claire-Mellowlight-800.webp 800w,
-									images/about/About-us-Martin-Marie-Claire-Mellowlight-1333.webp 1333w"
-								 src="images/about/About-us-Martin-Marie-Claire-Mellowlight-800.webp" 
-								 alt="Marie-Claire und Martin von Mellowlight" loading="lazy"/>
-							</div>
-						</a>
-						<div class="inner">
-							<p>
-								Wir sind Marie-Claire & Martin. Wir glauben an Hochzeiten, die sich leicht anfühlen –
-								und an Bilder, die bleiben.
-								<br />
-								Ob Elopement oder große Feier: Ihr dürft einfach ihr selbst sein. Erzählt uns von euren
-								Ideen, eurer Dynamik und den Momenten, die euch wirklich wichtig sind. Genau dort
-								entstehen ehrliche, zeitlose Erinnerungen.
-								<br />
-								Am liebsten begleiten wir euch nicht nur als Fotograf:innen, sondern als ruhige
-								Konstante an eurer Seite – aufmerksam, unaufdringlich und immer im richtigen Moment da.
-							</p>
-							<div class="content">
-								<a href="about.html" class="button alt fit">Lernt uns kennen</a>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="white-white">
-					<div class="header__bg">
-					<picture>
-							<source
-							  media="(max-width: 900px)"
-							  srcset="
-								images/weddings/webp-800/paar-auf-mauer-schaut-sich-an.webp 533w,
-								images/weddings/webp-1200/paar-auf-mauer-schaut-sich-an.webp 800w,
-								images/weddings/webp-2000/paar-auf-mauer-schaut-sich-an.webp 1334w"
-							  sizes="100vw">
-							<img
-							  class="image parallax"
-							  src="images/weddings/webp-2000/braut-mit-strauss-auf-mauer-vor-blauem-himmel.webp"
-							  sizes="100vw"
-							  alt="Einzug zur freien Trauung"
-							  loading="lazy"
-							  decoding="async">
-						</picture>
-					</div>
-				</section>
-				<section class="wrapper style2">
-					<header id="galerie">
-						<h2>Echte Momente, die bleiben</h2>
-						<p>Aus Augenblicken werden Erinnerungen</p>
-					</header>
-					<div id="gallery">
-						<div class="inner">
-							<div class="columns">
-								<div class="image fit hidden">
-									<a media="images/weddings/webp-2000/braut-schaut-in-kamera-nahaufnahme.webp">
-										<img
-											src="images/weddings/webp-1200/braut-schaut-in-kamera-nahaufnahme.webp"
-											srcset="images/weddings/webp-800/braut-schaut-in-kamera-nahaufnahme.webp 533w,
-													images/weddings/webp-1200/braut-schaut-in-kamera-nahaufnahme.webp 800w,
-													images/weddings/webp-2000/braut-schaut-in-kamera-nahaufnahme.webp 1334w"
-											alt="Emotionales Close-up, Featured im Braut & Bräutigam Magazin"
-											loading="lazy" />
-									</a>
-								</div>
-								<div class="image fit hidden">
-									<a media="images/weddings/webp-2000/brautpaar-museumsinsel-berlin.webp">
-										<img
-											src="images/weddings/webp-1200/brautpaar-museumsinsel-berlin.webp"
-											srcset="images/weddings/webp-800/brautpaar-museumsinsel-berlin.webp 800w,
-													images/weddings/webp-1200/brautpaar-museumsinsel-berlin.webp 1200w,
-													images/weddings/webp-2000/brautpaar-museumsinsel-berlin.webp 2000w"
-											alt="Brautpaarshooting auf der Museumsinsel Berlin"
-											loading="lazy" />
-									</a>
-								</div>
-								<div class="image fit hidden">
-									<a media="images/weddings/webp-2000/brautpaar-leuchtender-regenschirm.webp">
-										<img
-											src="images/weddings/webp-1200/brautpaar-leuchtender-regenschirm.webp"
-											srcset="images/weddings/webp-800/brautpaar-leuchtender-regenschirm.webp 800w,
-													images/weddings/webp-1200/brautpaar-leuchtender-regenschirm.webp 1200w,
-													images/weddings/webp-2000/brautpaar-leuchtender-regenschirm.webp 2000w"
-											alt="Romantische Nachtaufnahme unter leuchtendem Brautschirm"
-											loading="lazy" />
-									</a>
-								</div>
-								<div class="image fit hidden">
-									<a media="images/weddings/webp-2000/inniger-kuss-vor-funken.webp">
-										<img
-											src="images/weddings/webp-1200/inniger-kuss-vor-funken.webp"
-											srcset="images/weddings/webp-800/inniger-kuss-vor-funken.webp 533w,
-													images/weddings/webp-1200/inniger-kuss-vor-funken.webp 800w,
-													images/weddings/webp-2000/inniger-kuss-vor-funken.webp 1334w"
-											alt="Inniger Kuss vor Wunderkerzen"
-											loading="lazy" />
-									</a>
-								</div>
-								<div class="image fit hidden">
-									<a media="images/weddings/webp-2000/blauer-himmel-franken-brautpaar-hochzeitsshooting.webp">
-										<img
-											src="images/weddings/webp-1200/blauer-himmel-franken-brautpaar-hochzeitsshooting.webp"
-											srcset="images/weddings/webp-800/blauer-himmel-franken-brautpaar-hochzeitsshooting.webp 533w,
-													images/weddings/webp-1200/blauer-himmel-franken-brautpaar-hochzeitsshooting.webp 800w,
-													images/weddings/webp-2000/blauer-himmel-franken-brautpaar-hochzeitsshooting.webp 1334w"
-											alt="Umarmung mit Brautstrauß vor blauem Himmel"
-											loading="lazy" />
-									</a>
-								</div>
-								
-								<div class="image fit hidden">
-									<a media="images/weddings/webp-2000/eheringe-auf-buntem-brautstrauss.webp">
-										<img
-											src="images/weddings/webp-1200/eheringe-auf-buntem-brautstrauss.webp"
-											srcset="images/weddings/webp-800/eheringe-auf-buntem-brautstrauss.webp 800w,
-													images/weddings/webp-1200/eheringe-auf-buntem-brautstrauss.webp 1200w,
-													images/weddings/webp-2000/eheringe-auf-buntem-brautstrauss.webp 2000w"
-											alt="Selbstgeschmiedete Eheringe auf farbenfrohem Brautstrauß"
-											loading="lazy" />
-									</a>
-								</div>
-							</div>
+								<!-- Main -->
+				<section id="main" class="hp">
+
+					<!-- WER WIR SIND · Bild rechts, Text links -->
+					<section class="hp__block hp__weit">
+						<div class="hp__duo hp__duo--bildrechts">
+							<figure><img src="images/about/About-us-Martin-Marie-Claire-Mellowlight-1333.webp"
+								srcset="images/about/About-us-Martin-Marie-Claire-Mellowlight-400.webp 400w, images/about/About-us-Martin-Marie-Claire-Mellowlight-800.webp 800w, images/about/About-us-Martin-Marie-Claire-Mellowlight-1333.webp 1333w"
+								sizes="(min-width: 56rem) 34vw, 92vw" alt="Wir sind Marie-Claire und Martin von Mellowlight" width="1333" height="1333" loading="lazy" decoding="async"></figure>
 							<div>
-								<a href="gallery.html" class="button alt fit">Weitere Momente</a>
+								<p class="hp__eyebrow">Zwei Perspektiven, eine Vision</p>
+								<h2>Ruhig in der Arbeit.<br>Klar in der &Auml;sthetik.</h2>
+								<p>Wir sind Marie-Claire und Martin und fotografieren Hochzeiten zu zweit. Kennengelernt haben wir uns beim Studium in Ulm, 
+								acht Jahre lang haben wir in Berlin gelebt und dort gemeinsam mit der Hochzeitsfotografie begonnen. 
+								Heute sind wir zurück in Unterfranken und fotografieren von Schweinfurt aus Hochzeiten in ganz Franken und darüber hinaus.</p>
+								<p>Wir begleiten euch immer gemeinsam. Nicht, damit am Ende doppelt so viele Bilder entstehen, sondern damit wir Momente festhalten können, die eine Kamera allein verpassen würde.
+									Während einer von uns bei euch ist, sieht der andere, was eure Gäste machen. 
+									Beim Getting Ready sind wir an zwei Orten gleichzeitig, bei der Trauung haben wir zwei Perspektiven. 
+									Wir sind stets nah am Geschehen, ohne ständig in den Ablauf einzugreifen.</p>
+								<p>Ob Standesamt mit vier Gästen oder eine freie Trauung mit zweihundert - uns ist nicht wichtig, wie eure Hochzeit aussieht, sondern dass sie zu euch passt.</p>
+								<a class="hp__more" href="about.html">Mehr &uuml;ber uns →</a>
 							</div>
 						</div>
-					</div>
-				</section>
-				<section class="white-white">
-					<div class="header__bg">
-						<picture>
-							<source
-							  media="(max-width: 900px)"
-							  srcset="
-								images/weddings/webp-800/paar-museumsinsel-berlin.webp 533w,
-								images/weddings/webp-1200/paar-museumsinsel-berlin.webp 800w,
-								images/weddings/webp-2000/paar-museumsinsel-berlin.webp 1334w"
-							  sizes="100vw">
-							<img
-							  class="image parallax"
-							  src="images/weddings/webp-2000/paar-steht-vor-mauer-berlin.webp"
-							  sizes="100vw"
-							  alt="Einzug zur freien Trauung"
-							  loading="lazy"
-							  fetchpriority="low"
-							  decoding="async">
-						</picture>
-					</div>	
-				</section>
+					</section>
 
-				<!-- ANGEBOTE -->
-				<section class="wrapper style2">
-					<header id="angebote">
-						<h2>Was eine Hochzeit mit uns kostet</h2>
-						<p>Offen kommuniziert, bevor ihr fragen müsst</p>
-					</header>
 
-					<div class="content">
-						<div class="hidden">
-							<p>
-								Was kostet eine Begleitung, was ist darin enthalten und wie läuft das Ganze eigentlich ab?
-								Viele Fotograf:innen nennen ihre Preise erst nach einer Anfrage. 
-								Wir finden, ihr solltet vorher wissen, was euch eine Begleitung bei uns kostet. 
-								So könnt ihr in Ruhe entscheiden, ob wir zu euch und eurem Budget passen.
-							</p>
-							<p>
-								Auf unserer Angebotsseite findet ihr die Antworten. Neben unseren Preisen zeigen wir euch, 
-								was ihr von uns bekommt, wie viele Bilder euch erwarten und wie eine Zusammenarbeit in 
-								acht Schritten abläuft, von eurer ersten Nachricht bis zur fertigen Galerie.
-							</p>
-						</div>
-						<p/>
-						<div>
-							<a href="angebote.html" class="button special fit">Angebote und Ablauf ansehen</a>
-						</div>
-					</div>
-				</section>
+					
 
-				<section class="white-white">
-					<div class="header__bg">
-						<picture>
-							<source
-							  media="(max-width: 900px)"
-							  srcset="
-								images/weddings/webp-800/brautpaar-im-regen-braunschweig.webp 533w,
-								images/weddings/webp-1200/brautpaar-im-regen-braunschweig.webp 800w,
-								images/weddings/webp-2000/brautpaar-im-regen-braunschweig.webp 1334w"
-							  sizes="100vw">
-							<img
-							  class="image parallax"
-							  src="images/weddings/webp-2000/paar-kuss-brandmuehle-massbach.webp"
-							  sizes="100vw"
-							  alt="Einzug zur freien Trauung"
-							  loading="lazy"
-							  fetchpriority="low"
-							  decoding="async">
-						</picture>
-					</div>
-				</section>
-
-				<!-- TESTIMONIALS -->
-				<section class="wrapper style1 testim">
-					<header id="testim">
-						<h2>Worte unserer Paare</h2>
-						<p>Feedback von Paaren, deren Tag wir begleiten durften</p>
-					</header>
-					<div class="wrap hidden">
-						<span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
-						<span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
-						<ul id="testim-dots" class="dots">
-							<li class="dot active"></li>
-							<li class="dot"></li>
-							<li class="dot"></li>
-							<li class="dot"></li>
-							<li class="dot"></li>
-						</ul>
-						<div id="testim-content" class="cont">
-							<div class="testim-tile active">
-								<div class="img"><img src="images/testimonials/paarfoto-im-gruenen.webp" alt="Hochzeitspaar aus Mellrichstadt" loading="lazy" /></div>
-								<div class="testim-text">
-									<p>
-										Wir haben gerade zusammen alle Fotos angeschaut und sind absolut begeistert! 
-										Eure Fotos sind mega schön geworden und spiegeln genau unseren Tag wieder mit allen Emotionen und Details 🥰
-										Ihr habt wirklich Talent alle kleinen besonderen Momente vollkommen einzufangen! 
-										Vielen Dank für die wunderbaren Bilder!
-									</p>
-									<p class="signature">Nicole + Markus</p>
-								</div>
-							</div>
-							<div class="testim-tile">
-								<div class="img"><img src="images/testimonials/paar-portrait-im-gruenen.webp" alt="Hochzeitspaar aus Berlin" loading="lazy" /></div>
-								<div class="testim-text">
-									<p>
-										Wir haben uns über die Bilder sehr gefreut, sie sind sehr schön geworden. 
-										Ich freue mich auch sehr, dass ich jedem Gast mindestens ein besonders gut 
-										gelungenes Bild von ihm bzw. ihr schenken konnte (wenn nicht sogar mehr als eines).
-										Vielen Dank für alles!
-									</p>
-									<p class="signature">Lina + Jakob</p>
-								</div>
-							</div>
-							<div class="testim-tile">
-								<div class="img"><img src="images/testimonials/braeutigam-traegt-braut-hassfurt.webp" alt="Hochzeitspaar aus Hassfurt" loading="lazy" /></div>
-								<div class="testim-text">
-									<p>
-										Wir sind mega glücklich und könnten 100 Mal Danke sagen - war alles echt super und die Bilder sind sooo schön!<br/>
-										Haben auch alle nochmal gesagt wie lieb und toll ihr wart - wie ein Teil der Familie 🥰
-									</p>
-									<p class="signature">Michelle + Dino</p>
-								</div>
-							</div>
-							<div class="testim-tile">
-								<div class="img"><img src="images/testimonials/paar-lehnt-an-burg-tor.webp" alt="Hochzeitspaar aus Bamberg" loading="lazy" /></div>
-								<div class="testim-text">
-									<p>
-										Hi Marie-Claire und Martin :) <br/>
-										Die Bilder sind echt super, super schön und wir haben uns mega gefreut. Vielen, vielen Dank für die unvergesslichen Erinnerungen 🫶
-									</p>
-									<p class="signature">Sarah + Daniel</p>
-								</div>
-							</div>
-							<div class="testim-tile">
-								<div class="img"><img src="images/testimonials/paar-schaut-sich-vor-blaetterwand-in-die-augen.webp" alt="Hochzeitspaar aus Braunschweig" loading="lazy" /></div>
-								<div class="testim-text">
-									<p>
-										Hallo ihr beiden, das sind wirklich tolle (und viele) Bilder geworden, wir sind sehr glücklich damit. <br/>
-										Wir gucken uns die Bilder auch nach zwei Jahren immer noch gerne an und sind immer noch begeistert, wie schön sie geworden sind!
-									</p>
-									<p class="signature">Regina + Andre</p>
+					<!-- REPORTAGE · grosses Bild links, Legende rechts -->
+					<section class="hp__block hp__weit">
+						<p class="hp__eyebrow">Aus unseren Reportagen</p>
+						<h2>Die großen Momente und alles dazwischen.</h2>
+						<div class="hp__reportage">
+							<figure><img src="images/weddings/webp-1200/braut-schaut-in-kamera-nahaufnahme.webp"
+								srcset="images/weddings/webp-800/braut-schaut-in-kamera-nahaufnahme.webp 533w, images/weddings/webp-1200/braut-schaut-in-kamera-nahaufnahme.webp 799w, images/weddings/webp-2000/braut-schaut-in-kamera-nahaufnahme.webp 1333w"
+										 sizes="(min-width: 60rem) 42vw, 92vw" alt="Close-up der Braut mit Bräutigam" width="799" height="1200" loading="lazy" decoding="async"></figure>
+							<div class="hp__reportage__neben">
+								
+									<p>Ein gutes Hochzeitsfoto kann einen Moment erzählen. Eine Reportage erzählt den ganzen Tag.<br/>
+									Deshalb zeigen wir euch hier nicht nur einzelne Lieblingsbilder, 
+										sondern auch Ausschnitte aus echten Hochzeiten. Das Geplante und das Zufällige, 
+										große Momente und kleine Beobachtungen, Ruhe und Bewegung.<br/><br/>
+									So bekommt ihr einen besseren Eindruck davon, wie wir einen Hochzeitstag 
+										fotografisch begleiten und wie aus vielen einzelnen Momenten eine Geschichte entsteht.</p>
+									<!-- PLATZHALTER: aktivieren, sobald der Journal-Beitrag online ist.
+									<a class="hp__more" href="https://blog.mellowlight.de/hochzeit-braunschweig/">Die ganze Reportage ansehen</a>
+									-->
+								<div class="hp__reportage__klein">
+									<figure><img src="images/weddings/webp-1200/nahaufnahme-ringe-auf-brautstrauss-braunschweig.webp"
+										srcset="images/weddings/webp-800/nahaufnahme-ringe-auf-brautstrauss-braunschweig.webp 533w, images/weddings/webp-1200/nahaufnahme-ringe-auf-brautstrauss-braunschweig.webp 799w, images/weddings/webp-2000/nahaufnahme-ringe-auf-brautstrauss-braunschweig.webp 1333w"
+										sizes="(min-width: 60rem) 13vw, 45vw" alt="Eheringe auf dem Brautstrau&szlig;" width="799" height="1200" loading="lazy" decoding="async"></figure>
+									<figure><img src="images/weddings/webp-1200/paar-kommt-aus-rathaus-braunschweig.webp"
+										srcset="images/weddings/webp-800/paar-kommt-aus-rathaus-braunschweig.webp 533w, images/weddings/webp-1200/paar-kommt-aus-rathaus-braunschweig.webp 799w, images/weddings/webp-2000/paar-kommt-aus-rathaus-braunschweig.webp 1333w"
+										sizes="(min-width: 60rem) 13vw, 45vw" alt="Brautpaar verl&auml;sst das Rathaus Braunschweig" width="799" height="1200" loading="lazy" decoding="async"></figure>
+									<figure class="hp__reportage__quer"><img src="images/weddings/webp-1200/brautpaar-leuchtender-regenschirm.webp"
+										srcset="images/weddings/webp-800/brautpaar-leuchtender-regenschirm.webp 800w, images/weddings/webp-1200/brautpaar-leuchtender-regenschirm.webp 1200w, images/weddings/webp-2000/brautpaar-leuchtender-regenschirm.webp 2000w"
+										sizes="(min-width: 60rem) 13vw, 45vw" alt="Brautpaar unter leuchtendem Regenschirm" width="1200" height="799" loading="lazy" decoding="async"></figure>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="featured-list hidden">
-					<a href="https://www.weddyplace.com/vendors/69baa823b84deb835ff1cc00" target="_blank" class="featured-badge"> 
-						<img alt="Mellowlight listed on WeddyPlace" src="images/featured-badges/weddyplace-featured-badge.webp"> 
-					</a>
-					<a href="https://www.brautmagazin.de/hochzeitsblog/vorteile-einer-day-wedding/"	target="_blank" class="featured-badge highlight">
-						<img src="images/featured-badges/Badge_BB_DE_featured-in_2025.webp" alt="Mellowlight published in Braut & Bräutigam Magazin" width="150" height="150"/>
-					</a>
-					<a href="https://www.hochzeitsportal24.de/branchenbuch/hochzeitsfotos/mellowlight-foto-und-film-schweinfurt/" class="featured-badge">
-					   <img alt="Mellowlight listed on Hochzeitsportal24" src="images/featured-badges/hochzeitsportal24.featured-badge.webp">
-					</a>
-					<a href="https://bridebook.com/de/wedding-photographers/mellowlight-schweinfurt-unterfranken-deGX3kLbzX" target="_blank" class="featured-badge"> 
-						<img alt="Mellowlight listed on Bridebook" src="images/featured-badges/bridebook-featured-badge.webp"> 
-					</a>
-				</div>
-				</section>
-				
-				<section class="white-white">
+						<a class="hp__more" href="gallery.html">Hochzeitsreportagen und weitere Momente ansehen →</a>
+					</section>
+					
+					<!-- PRESSENOTIZ · schmales Band, kein Logo-Wall -->
+					<section class="hp__block--eng hp__weit">
+						<div class="hp__presse">
+							<img class="hp__presse__badge" src="images/featured-badges/Badge_BB_DE_featured-in_2025.webp"
+								alt="Braut &amp; Br&auml;utigam Magazin, Featured 2025" width="300" height="300" loading="lazy">
+								
+							<p>Ein redaktioneller Beitrag im <strong>Braut & Bräutigam Magazin</strong>, bebildert mit unseren Fotografien. 
+								Erschienen im gedruckten Heft sowie als digitaler Artikel.</p>
+							<figure class="hp__presse__image" ><img src="images/featured-badges/Flatlay-Mellowlight-im-Braut-Magazin-800.webp"
+								srcset="images/featured-badges/Flatlay-Mellowlight-im-Braut-Magazin-400.webp 400w, images/featured-badges/Flatlay-Mellowlight-im-Braut-Magazin-800.webp 800w"
+								sizes="(min-width: 48rem) 30vw, 45vw" alt="Unsere Bilder abgedruckt im Braut & Bräutigam Magazin" width="1200" height="800" loading="lazy" decoding="async">
+							<figcaption>Ausgabe Nr.2 / 2026</figcaption></figure>
+						</div>
+					</section>
+
+					<!-- 5 · TYPOGRAFISCHE AUSSAGE
+					     Der Satz ist als Platzhalter gedacht und laesst sich hier direkt
+					     austauschen. Bewusst ohne Eyebrow, ohne Bild, ohne Link - die
+					     Zaesur entsteht durch das Nichts drumherum. 
+					<section class="hp__satz">
+						<blockquote>
+							<p>Wir übernehmen die Verantwortung für eure Erinnerungen.</p>
+						</blockquote>
+					</section>
+					-->
+					
+					<!-- REGION · Text links, Hochformat rechts, unten buendig -->
+					<section class="hp__block hp__weit">
+						<div class="hp__region">
+							<div>
+								<p class="hp__eyebrow">Wo wir fotografieren</p>
+								<h2>In Franken zuhause, gerne unterwegs</h2>
+								<p>Wir leben in Schweinfurt und kennen die Gegend gut. 
+									Die meisten unserer Hochzeiten fotografieren wir in Franken: in Würzburg, 
+									Bamberg und Fürth, in Main-Spessart, in den Haßbergen, der Rhön und den 
+									vielen kleinen Orten dazwischen.</p>
+								<p>Diese Mischung mögen wir. Vertraute Landschaften und Orte, 
+									an denen wir zum ersten Mal sind. Eine intime Hochzeit im Standesamt mitten in der Stadt, 
+									eine ausgelassene Feier auf einer historischen Burg oder ein glamouröses Fest auf einem Weingut.</p>
+								<p>Bis 100 Kilometer ab Schweinfurt ist die Anfahrt inklusive. 
+									Auch wenn es weiter weg ist, fahren wir gerne zu euch. In den letzten Jahren hat
+									uns die Hochzeitsfotografie unter anderem nach Karlsruhe, Ulm, Braunschweig und Berlin geführt.</p>
+							</div>
+							<figure><img src="images/weddings/webp-1200/inniger-kuss-vor-funken.webp"
+								srcset="images/weddings/webp-800/inniger-kuss-vor-funken.webp 533w, images/weddings/webp-1200/inniger-kuss-vor-funken.webp 799w, images/weddings/webp-2000/inniger-kuss-vor-funken.webp 1333w"
+								sizes="(min-width: 56rem) 28vw, 92vw" alt="Brautpaar vor der Kunsthalle Schweinfurt" width="800" height="1200" loading="lazy" decoding="async"></figure>
+						</div>
+					</section>
+					
+					<section class="white-white">
 					<div class="header__bg">
 						<picture>
 							<source
@@ -535,18 +343,134 @@
 							  alt="Einzug zur freien Trauung"
 							  loading="lazy"
 							  fetchpriority="low"
-							  decoding="async">
+							  decoding="async" height="100vw">
 						</picture>
 					</div>
 				</section>
-				<!--CONTACT -->
-				<section class="wrapper style1" id="kontakt">
-					<header>
-						<h2>Erzählt uns von eurer Hochzeit</h2>
-						<p>Teilt eure Geschichte mit uns</p>
-					</header>
+					
+					<!-- ANGEBOTE · zweispaltiger Text, bewusst ohne Preise -->
+					<section class="hp__block hp__lese">
+						<p class="hp__eyebrow">Wie wir euch begleiten</p>
+						<h2>Von der ersten Nachricht bis zu euren Bildern</h2>
+						<div class="hp__zweispaltig">
+							<p>Was kostet eine Begleitung, was ist darin enthalten und wie läuft das Ganze eigentlich ab? 
+								Viele Fotografen nennen ihre Preise erst nach einer Anfrage. 
+								Wir finden, ihr solltet vorher wissen, was euch eine Begleitung bei uns kostet. 
+								So könnt ihr in Ruhe entscheiden, ob wir zu euch und eurem Budget passen.</p>
 
-					<div class="content">
+							<p>Zu unserer Hochzeitsreportage gehört mehr als der Hochzeitstag selbst. 
+								Wir sprechen vorher ausführlich mit euch über den Ablauf, 
+								helfen bei der Vorbereitung und klären gemeinsam, was euch wichtig ist. 
+								Dazu bekommt ihr unseren Wedding Guide und bleibt bis zur Hochzeit mit uns in Kontakt.</p>
+
+							<p>Am Tag eurer Hochzeit fotografieren wir zu zweit und sichern eure Bilder mehrfach. 
+								Danach wählen wir jedes Bild von Hand aus und bearbeiten die Auswahl einzeln. 
+								Schon am Tag nach eurer Hochzeit bekommt ihr eine kleine Vorschau, 
+								die vollständige Galerie folgt später.</p>
+
+							<p>Auf unserer Angebotsseite findet ihr alles Weitere: unsere Preise, 
+								was genau enthalten ist, wie viele Bilder euch erwarten und wie die Zusammenarbeit abläuft. 
+								In acht Schritten zeigen wir euch den Weg von eurer ersten Nachricht bis zur fertigen Galerie.</p>
+							
+							<a class="hp__more" href="angebote.html">Leistungen, Preise und Ablauf ansehen →</a>
+						</div>
+						
+					</section>
+					
+				
+					
+					
+
+				<section class="hp__block hp__weit wrapper style1 testim">
+					<p class="hp__eyebrow">Feedback von Paaren, deren Tag wir begleiten durften</p>
+					<h2>Worte unserer Paare</h2>
+					<div class="wrap hidden">
+						<span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+						<span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+						<ul id="testim-dots" class="dots">
+							<li class="dot active"></li>
+							<li class="dot"></li>
+							<li class="dot"></li>
+							<li class="dot"></li>
+							<li class="dot"></li>
+						</ul>
+						<div id="testim-content" class="cont">
+							<div class="testim-tile active">
+								<div class="img"><img src="images/testimonials/paarfoto-im-gruenen.webp" alt="Hochzeitspaar aus Mellrichstadt" loading="lazy"  width="500" height="500"></div>
+								<div class="testim-text">
+									<p>
+										Wir haben gerade zusammen alle Fotos angeschaut und sind absolut begeistert! 
+										Eure Fotos sind mega schön geworden und spiegeln genau unseren Tag wieder mit allen Emotionen und Details 🥰
+										Ihr habt wirklich Talent alle kleinen besonderen Momente vollkommen einzufangen! 
+										Vielen Dank für die wunderbaren Bilder!
+									</p>
+									<p class="signature">Nicole + Markus</p>
+								</div>
+							</div>
+							<div class="testim-tile">
+								<div class="img"><img src="images/testimonials/paar-portrait-im-gruenen.webp" alt="Hochzeitspaar aus Berlin" loading="lazy"  width="500" height="500"></div>
+								<div class="testim-text">
+									<p>
+										Wir haben uns über die Bilder sehr gefreut, sie sind sehr schön geworden. 
+										Ich freue mich auch sehr, dass ich jedem Gast mindestens ein besonders gut 
+										gelungenes Bild von ihm bzw. ihr schenken konnte (wenn nicht sogar mehr als eines).
+										Vielen Dank für alles!
+									</p>
+									<p class="signature">Lina + Jakob</p>
+								</div>
+							</div>
+							<div class="testim-tile">
+								<div class="img"><img src="images/testimonials/braeutigam-traegt-braut-hassfurt.webp" alt="Hochzeitspaar aus Hassfurt" loading="lazy"  width="500" height="500"></div>
+								<div class="testim-text">
+									<p>
+										Wir sind mega glücklich und könnten 100 Mal Danke sagen - war alles echt super und die Bilder sind sooo schön!<br/>
+										Haben auch alle nochmal gesagt wie lieb und toll ihr wart - wie ein Teil der Familie 🥰
+									</p>
+									<p class="signature">Michelle + Dino</p>
+								</div>
+							</div>
+							<div class="testim-tile">
+								<div class="img"><img src="images/testimonials/paar-lehnt-an-burg-tor.webp" alt="Hochzeitspaar aus Bamberg" loading="lazy"  width="500" height="500"></div>
+								<div class="testim-text">
+									<p>
+										Hi Marie-Claire und Martin :) <br/>
+										Die Bilder sind echt super, super schön und wir haben uns mega gefreut. Vielen, vielen Dank für die unvergesslichen Erinnerungen 🫶
+									</p>
+									<p class="signature">Sarah + Daniel</p>
+								</div>
+							</div>
+							<div class="testim-tile">
+								<div class="img"><img src="images/testimonials/paar-schaut-sich-vor-blaetterwand-in-die-augen.webp" alt="Hochzeitspaar aus Braunschweig" loading="lazy"  width="500" height="500"></div>
+								<div class="testim-text">
+									<p>
+										Hallo ihr beiden, das sind wirklich tolle (und viele) Bilder geworden, wir sind sehr glücklich damit. <br/>
+										Wir gucken uns die Bilder auch nach zwei Jahren immer noch gerne an und sind immer noch begeistert, wie schön sie geworden sind!
+									</p>
+									<p class="signature">Regina + Andre</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="featured-list hidden">
+						<a href="https://www.weddyplace.com/vendors/69baa823b84deb835ff1cc00" target="_blank" class="featured-badge"> 
+							<img alt="Mellowlight listed on WeddyPlace" src="images/featured-badges/weddyplace-featured-badge.webp" width="250" height="250"> 
+						</a>
+						<a href="https://www.brautmagazin.de/hochzeitsblog/vorteile-einer-day-wedding/"	target="_blank" class="featured-badge highlight">
+							<img src="images/featured-badges/Badge_BB_DE_featured-in_2025.webp" alt="Mellowlight published in Braut & Bräutigam Magazin" width="150" height="150"/>
+						</a>
+						<a href="https://www.hochzeitsportal24.de/branchenbuch/hochzeitsfotos/mellowlight-foto-und-film-schweinfurt/" class="featured-badge">
+						   <img alt="Mellowlight listed on Hochzeitsportal24" src="images/featured-badges/hochzeitsportal24.featured-badge.webp" width="350" height="350">
+						</a>
+						<a href="https://bridebook.com/de/wedding-photographers/mellowlight-schweinfurt-unterfranken-deGX3kLbzX" target="_blank" class="featured-badge"> 
+							<img alt="Mellowlight listed on Bridebook" src="images/featured-badges/bridebook-featured-badge.webp" width="291" height="291"> 
+						</a>
+					</div>
+				</section>
+
+				<!--CONTACT -->
+				<section class="hp__weit wrapper style1" id="kontakt">
+						<p class="hp__eyebrow">Teilt eure Geschichte mit uns</p>
+						<h2>Erzählt uns von eurer Hochzeit</h2>
 						<p class="hidden">
 							Die meisten Paare schreiben uns, wenn sie ein gutes Gefühl haben.
 							Kein fertiges Konzept. Kein perfekter Plan. Nur Intuition.
@@ -555,14 +479,14 @@
 						</p>
 						<div class="row 200%">
 							<div class="6u 12u$(medium)">
-								<img
+								<figure><img
 									class="image fit flush"
 									src="images/weddings/webp-1200/champagne-pop-paar-spritzt-sekt.webp"
 									srcset="images/weddings/webp-800/champagne-pop-paar-spritzt-sekt.webp 533w,
 											images/weddings/webp-1200/champagne-pop-paar-spritzt-sekt.webp 800w,
 											images/weddings/webp-2000/champagne-pop-paar-spritzt-sekt.webp 1334w"
 									alt="Champagne-Pop. Bräutigam verspritzt Sekt."
-									loading="lazy" />
+									loading="lazy"  width="800" height="1200"></figure>
 							</div>
 							<p />
 							<div class="6u 12u$(medium)">
@@ -578,78 +502,79 @@
 												name="Vornamen"
 												id="name"
 												value=""
-												placeholder="Hallo, wir sind..."
+												placeholder="Eure Vornamen"
 												autocomplete="given-name"
 												required />
 										</div>
+										<!-- Break -->
 										<div class="6u 12u$(xsmall)">
-											<input
-												type="tel"
-												name="Telefon"
-												id="phone"
-												value=""
-												placeholder="Telefonnummer"
-												autocomplete="tel"
-												required />
+											<label for="date">Euer Hochzeitsdatum:</label>
 										</div>
 										<div class="6u$ 12u$(xsmall)">
-											<input
-												type="email"
-												name="Email"
-												id="email"
-												value=""
-												placeholder="Email Adresse"
-												autocomplete="email"
-												required />
-										</div>
-										<div class="4u 12u$(xsmall)">
-											<label for="date">Wedding Date:</label>
-										</div>
-										<div class="8u$ 12u$(xsmall)">
 											<input type="date" name="Datum" id="date" required />
 										</div>
-										<div class="12u$">
+										<!-- Break -->
+										<div class="6u 12u$(xsmall)">
 											<input
 												type="text"
 												name="Location"
 												id="location"
 												value=""
-												placeholder="Location"
-												required />
+												placeholder="Location (optional)"
+												/>
+										</div>
+										<div class="6u$ 12u$(xsmall)">
+											<input
+												type="text"
+												name="Gäste"
+												id="gaeste"
+												value=""
+												placeholder="Wie viele Gäste (optional)"
+												/>
 										</div>
 										<!-- Break -->
 										<div class="12u$">
 											<textarea
 												name="Nachricht"
 												id="message"
-												placeholder="Das sind unsere Wünsche und Vorstellungen"
+												placeholder="Erzählt uns von eurem Tag. &#10;Was habt ihr vor, was ist euch wichtig?"
 												rows="6"
 												required></textarea>
 										</div>
 										<!-- Break -->
-										<div class="12u$">
+										<div class="12u">
 											<input
-												type="text"
-												name="Budget"
-												id="budget"
+												type="email"
+												name="Email"
+												id="email"
 												value=""
-												placeholder="Unser Fotografie-Budget"
+												placeholder="E-Mail Adresse"
+												autocomplete="email"
 												required />
 										</div>
-										<!-- Break 
+										<!-- Break -->
+										<div class="6u 12u$(xsmall)">
+											<label for="anrufen">Kurzer Anruf statt Antwort per Mail:</label>
+										</div>
+										<div class="6u$ 12u$(xsmall)">
+											<input
+												type="tel"
+												name="Telefon"
+												id="phone"
+												value=""
+												placeholder="Telefonnummer (optional)"
+												autocomplete="tel"
+												/>
+										</div>
+										<!-- Break -->
 										<div class="12u$">
 											<input
 												type="text"
-												name="Band"
-												id="band"
+												name="Quelle"
+												id="quelle"
 												value=""
-												placeholder="Unsere Lieblingsband(s) / Musiker"
-												required />
-										</div-->
-										<!-- Break -->
-										<div class="12u$ 12u$(small)">
-											<input type="checkbox" id="anrufen" name="Anruf erlaubt"/>
-											<label for="anrufen">Ihr dürft uns gerne anrufen</label>
+												placeholder="Wie seid ihr auf uns gekommen? (optional)"
+												/>
 										</div>
 										<!-- Break -->
 										<input type="hidden" name="redirect" value="https://mellowlight.de/thankyou" />
@@ -673,11 +598,9 @@
 								</form>
 							</div>
 						</div>
-					</div>
 				</section>
-			</div>
 		</section>
-		<!-- Cookie Banner -->
+		<!-- Cookie Banner 
 		<div class="cookiewrapper">
 			<header>
 				<i class="bx bx-cookie"></i>
@@ -696,47 +619,71 @@
 				<button class="cookiebutton secondary small" id="declineBtn">Ablehnen</button>
 			</div>
 		</div>
-
+-->
 		<!--BACK TO TOP-->
 		<a id="back-to-top" class=""></a>
 		<!-- Footer -->
-		<footer id="footer">
-			<div class="container contact">
-				<ul class="icons">
-					<li><a	href="https://www.instagram.com/mellowlight.wedding/"
-							class="icon fa-instagram"
-							target="_blank"
-							><span class="label">Instagram</span></a>
-					</li>
-					<li>
-						<a href="mailto:kontakt@mellowlight.de" class="icon fa-envelope-o"
-							><span class="label" target="_blank">Email</span></a>
-					</li>
-					<li>
-						<a href="https://wa.me/+4915753301238" class="icon fa-whatsapp"
-							><span class="label" target="_blank">Whatsapp</span></a>
-					</li>
-				</ul>
+		<footer id="footer" class="site-footer">
+			<div class="site-footer__inner">
+
+				<div class="site-footer__brand">
+					<p class="site-footer__wordmark">MELLOW<span>LIGHT</span></p>
+					<p class="site-footer__line">
+						Hochzeitsreportagen in Franken und überall dort, wo ihr feiert.
+					</p>
+					<a href="anfrage.html" class="button special">Erz&auml;hlt uns von eurem Tag</a>
+
+					<div class="site-footer__brandrow">
+						<p class="site-footer__pride">
+							<img src="images/lgbtq-plus-pride-flag.webp" alt="Regenbogenflagge"
+								 width="35" height="35" loading="lazy">
+							<span class="futura">Love is <span class="highlight">Love</span></span>
+						</p>
+						<ul class="site-footer__social">
+							<li><a href="https://www.instagram.com/mellowlight.wedding/" class="icon fa-instagram"
+								   target="_blank" rel="noopener" aria-label="Instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="mailto:kontakt@mellowlight.de" class="icon fa-envelope-o"
+								   aria-label="E-Mail"><span class="label">Email</span></a></li>
+							<li><a href="https://wa.me/+4915753301238" class="icon fa-whatsapp"
+								   target="_blank" rel="noopener" aria-label="WhatsApp"><span class="label">Whatsapp</span></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<nav class="site-footer__nav" aria-label="Mellowlight">
+					<h2 class="site-footer__heading">Mellowlight</h2>
+					<ul>
+						<li><a href="index.html">Startseite</a></li>
+						<li><a href="gallery.html">Hochzeiten</a></li>
+						<li><a href="angebote.html">Angebote</a></li>
+						<li><a href="about.html">&Uuml;ber uns</a></li>
+						<li><a href="faq.html">Gut zu wissen</a></li>
+						<li><a href="anfrage.html">Anfragen</a></li>
+					</ul>
+				</nav>
+
+				<nav class="site-footer__nav" aria-label="Mehr von uns">
+					<h2 class="site-footer__heading">Mehr von uns</h2>
+					<ul>
+						<li><a href="https://blog.mellowlight.de/" target="_blank" rel="noopener">Journal</a></li>
+						<li><a href="https://portraits.mellowlight.de/" target="_blank" rel="noopener">Portraits</a></li>
+					</ul>
+				</nav>
+
+				<nav class="site-footer__nav" aria-label="Rechtliches">
+					<h2 class="site-footer__heading">Rechtliches</h2>
+					<ul>
+						<li><a href="impressum.html">Impressum</a></li>
+						<li><a href="datenschutz.html">Datenschutz</a></li>
+						<li><a class="cookiesettings" href="#" aria-label="Cookie-Einstellungen">Cookies</a></li>
+					</ul>
+				</nav>
+
 			</div>
-			<div class="footerlinks">
-			Editorial Hochzeitsfotografen aus Schweinfurt in Unterfranken.
-			Hochzeiten in Würzburg, Bamberg, ganz Deutschland und weltweit.<br/>
-			Wirf einen Blick in unseren Blog:
-			<a href="https://blog.mellowlight.de/">blog.mellowlight.de</a>
-			<br />
-			Weiteres, wie Portraits, Newborn Fotografie und Business Shoots findest du auf
-			<a href="https://portraits.mellowlight.de/">portraits.mellowlight.de</a>
-			<br /><br />
-			<img src="images/lgbtq-plus-pride-flag.webp" alt="LGBTQ+ Flagge" loading="lazy" /><span class="futura"
-				>Love is <span class="highlight">Love</span></span>
-				<br/><br/>
-				
-			</div>
-			<div class="copyright">
-				Copyright Mellowlight 2026 |
-				<a href="datenschutz.html">Datenschutz</a> | <a href="impressum.html">Impressum</a> |
-				<a class="cookiesettings" aria-label="Cookie Einstellungen">🍪</a>
-			</div>
+
+			<p class="site-footer__legal">
+				&copy; 2026 Mellowlight &mdash; Marie-Claire &amp; Martin
+			</p>
 		</footer>
 		
 
